@@ -42,12 +42,15 @@
             this.BtnCrear = new System.Windows.Forms.Button();
             this.TxtNombre = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.dgvUsuarios = new System.Windows.Forms.DataGridView();
+            this.btnMostrar = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).BeginInit();
             this.SuspendLayout();
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(394, 52);
+            this.label6.Location = new System.Drawing.Point(338, 47);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(108, 13);
             this.label6.TabIndex = 27;
@@ -55,15 +58,15 @@
             // 
             // TxtConfirmar
             // 
-            this.TxtConfirmar.Location = new System.Drawing.Point(394, 71);
+            this.TxtConfirmar.Location = new System.Drawing.Point(341, 71);
             this.TxtConfirmar.Name = "TxtConfirmar";
-            this.TxtConfirmar.Size = new System.Drawing.Size(100, 20);
+            this.TxtConfirmar.Size = new System.Drawing.Size(121, 20);
             this.TxtConfirmar.TabIndex = 26;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(262, 52);
+            this.label5.Location = new System.Drawing.Point(202, 52);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(61, 13);
             this.label5.TabIndex = 25;
@@ -71,9 +74,9 @@
             // 
             // TxtClave
             // 
-            this.TxtClave.Location = new System.Drawing.Point(262, 71);
+            this.TxtClave.Location = new System.Drawing.Point(202, 71);
             this.TxtClave.Name = "TxtClave";
-            this.TxtClave.Size = new System.Drawing.Size(100, 20);
+            this.TxtClave.Size = new System.Drawing.Size(121, 20);
             this.TxtClave.TabIndex = 24;
             // 
             // label4
@@ -106,7 +109,7 @@
             // CmbRol
             // 
             this.CmbRol.FormattingEnabled = true;
-            this.CmbRol.Location = new System.Drawing.Point(411, 137);
+            this.CmbRol.Location = new System.Drawing.Point(205, 183);
             this.CmbRol.Name = "CmbRol";
             this.CmbRol.Size = new System.Drawing.Size(121, 21);
             this.CmbRol.TabIndex = 20;
@@ -114,7 +117,7 @@
             // CmbTipoUsuario
             // 
             this.CmbTipoUsuario.FormattingEnabled = true;
-            this.CmbTipoUsuario.Location = new System.Drawing.Point(262, 137);
+            this.CmbTipoUsuario.Location = new System.Drawing.Point(202, 129);
             this.CmbTipoUsuario.Name = "CmbTipoUsuario";
             this.CmbTipoUsuario.Size = new System.Drawing.Size(121, 21);
             this.CmbTipoUsuario.TabIndex = 19;
@@ -135,12 +138,13 @@
             // 
             // BtnCrear
             // 
-            this.BtnCrear.Location = new System.Drawing.Point(178, 272);
+            this.BtnCrear.Location = new System.Drawing.Point(495, 54);
             this.BtnCrear.Name = "BtnCrear";
             this.BtnCrear.Size = new System.Drawing.Size(75, 23);
             this.BtnCrear.TabIndex = 16;
             this.BtnCrear.Text = "Crear";
             this.BtnCrear.UseVisualStyleBackColor = true;
+            this.BtnCrear.Click += new System.EventHandler(this.BtnCrear_Click);
             // 
             // TxtNombre
             // 
@@ -152,17 +156,37 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(281, 22);
+            this.label1.Location = new System.Drawing.Point(220, 23);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(43, 13);
             this.label1.TabIndex = 14;
             this.label1.Text = "Usuario";
             // 
+            // dgvUsuarios
+            // 
+            this.dgvUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvUsuarios.Location = new System.Drawing.Point(45, 254);
+            this.dgvUsuarios.Name = "dgvUsuarios";
+            this.dgvUsuarios.Size = new System.Drawing.Size(511, 178);
+            this.dgvUsuarios.TabIndex = 28;
+            // 
+            // btnMostrar
+            // 
+            this.btnMostrar.Location = new System.Drawing.Point(495, 100);
+            this.btnMostrar.Name = "btnMostrar";
+            this.btnMostrar.Size = new System.Drawing.Size(75, 23);
+            this.btnMostrar.TabIndex = 29;
+            this.btnMostrar.Text = "Mostrar";
+            this.btnMostrar.UseVisualStyleBackColor = true;
+            this.btnMostrar.Click += new System.EventHandler(this.btnMostrar_Click);
+            // 
             // FrmUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(610, 450);
+            this.Controls.Add(this.btnMostrar);
+            this.Controls.Add(this.dgvUsuarios);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.TxtConfirmar);
             this.Controls.Add(this.label5);
@@ -179,6 +203,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FrmUsuarios";
             this.Text = "FrmUsuarios";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -200,5 +225,7 @@
         private System.Windows.Forms.Button BtnCrear;
         private System.Windows.Forms.TextBox TxtNombre;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dgvUsuarios;
+        private System.Windows.Forms.Button btnMostrar;
     }
 }

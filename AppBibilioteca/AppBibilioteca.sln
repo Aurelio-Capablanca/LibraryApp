@@ -5,7 +5,7 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppBibilioteca", "AppBibilioteca\AppBibilioteca.csproj", "{ACFC0B72-62AA-4C3D-BC7B-9F49DBD66216}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zeus", "..\..\..\..\..\..\Proyectos\Proyectos Anteriores\Zeus Definitivo 5.0\Zeus 5.0\Zeus\Zeus.csproj", "{92F4EBD6-4FAF-4503-987C-C0CC96ADC747}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zeus", "..\..\..\..\..\..\..\Proyectos\Proyectos Anteriores\Zeus Definitivo 5.0\Zeus 5.0\Zeus\Zeus.csproj", "{92F4EBD6-4FAF-4503-987C-C0CC96ADC747}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

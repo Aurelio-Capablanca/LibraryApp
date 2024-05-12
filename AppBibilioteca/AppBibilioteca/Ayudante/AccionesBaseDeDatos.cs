@@ -7,6 +7,7 @@ using System.Collections;
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using AppBibilioteca.Modelo;
 
 namespace AppBibilioteca.Ayudante
 {
@@ -62,6 +63,30 @@ namespace AppBibilioteca.Ayudante
             {
                 Conexion.Conexionsql().Close();
             }
+        }
+
+        protected int EjecutarAccion(ArrayList parametros, string query) 
+        {
+            int retorno = 0;
+            try
+            {
+                SqlCommand consultaEjecutar = new SqlCommand(query, Conexion.Conexionsql());
+                for (int i = 0; i < parametros.Count; i++)
+                {
+                    consultaEjecutar.Parameters.Add(new SqlParameter("param" + (i + 1), parametros[i]));
+                }
+                retorno = Convert.ToInt32(consultaEjecutar.ExecuteNonQuery());
+                if (retorno >= 1)
+                    MessageBox.Show("El usuario se ingreso de manera exitosa", "Proceso completado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                else
+                    MessageBox.Show("El usuario no se a podido ingresar", "Error en el proceso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error de conexion :  " + ex, "Error critico", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return retorno;
+            }
+            return retorno;
         }
 
     }

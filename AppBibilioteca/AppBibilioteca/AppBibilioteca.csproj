@@ -107,6 +107,12 @@
     <Compile Include="Vista\FrmUsuarios.Designer.cs">
       <DependentUpon>FrmUsuarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\tester.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\tester.Designer.cs">
+      <DependentUpon>tester.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -130,6 +136,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\FrmUsuarios.resx">
       <DependentUpon>FrmUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\tester.resx">
+      <DependentUpon>tester.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
