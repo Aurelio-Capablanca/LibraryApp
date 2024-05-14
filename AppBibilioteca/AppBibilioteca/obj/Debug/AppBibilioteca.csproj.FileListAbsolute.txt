@@ -50,3 +50,5 @@ C:\Users\adalb\Desktop\Proyecto\Personal\Universidad\Universidad 2024\Ciclo 1\Pr
 C:\Users\adalb\Desktop\Proyecto\Personal\Universidad\Universidad 2024\Ciclo 1\Programación I\LibraryApp\AppBibilioteca\AppBibilioteca\obj\Debug\AppBibil.F5FCC0AD.Up2Date
 C:\Users\adalb\Desktop\Proyecto\Personal\Universidad\Universidad 2024\Ciclo 1\Programación I\LibraryApp\AppBibilioteca\AppBibilioteca\obj\Debug\AppBibilioteca.exe
 C:\Users\adalb\Desktop\Proyecto\Personal\Universidad\Universidad 2024\Ciclo 1\Programación I\LibraryApp\AppBibilioteca\AppBibilioteca\obj\Debug\AppBibilioteca.pdb
+C:\Users\adalb\Desktop\Proyecto\Personal\Universidad\Universidad 2024\Ciclo 1\Programación I\LibraryApp\AppBibilioteca\AppBibilioteca\obj\Debug\AppBibilioteca.Vista.tester.resources
+C:\Users\adalb\Desktop\Proyecto\Personal\Universidad\Universidad 2024\Ciclo 1\Programación I\LibraryApp\AppBibilioteca\AppBibilioteca\obj\Debug\AppBibilioteca.Vista.FrmCatalogoLibros.resources

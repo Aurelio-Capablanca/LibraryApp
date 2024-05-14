@@ -33,6 +33,7 @@
             this.lblLogo = new System.Windows.Forms.Label();
             this.BtnUsuarios = new System.Windows.Forms.Button();
             this.BtnLibros = new System.Windows.Forms.Button();
+            this.BtnCatalogo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -82,11 +83,22 @@
             this.BtnLibros.Text = "Libros";
             this.BtnLibros.UseVisualStyleBackColor = true;
             // 
+            // BtnCatalogo
+            // 
+            this.BtnCatalogo.Location = new System.Drawing.Point(12, 303);
+            this.BtnCatalogo.Name = "BtnCatalogo";
+            this.BtnCatalogo.Size = new System.Drawing.Size(165, 58);
+            this.BtnCatalogo.TabIndex = 6;
+            this.BtnCatalogo.Text = "Catalogo de Libros";
+            this.BtnCatalogo.UseVisualStyleBackColor = true;
+            this.BtnCatalogo.Click += new System.EventHandler(this.BtnCatalogo_Click);
+            // 
             // FrmMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.BtnCatalogo);
             this.Controls.Add(this.BtnLibros);
             this.Controls.Add(this.BtnUsuarios);
             this.Controls.Add(this.lblLogo);
@@ -108,5 +120,6 @@
         private System.Windows.Forms.Label lblLogo;
         private System.Windows.Forms.Button BtnUsuarios;
         private System.Windows.Forms.Button BtnLibros;
+        private System.Windows.Forms.Button BtnCatalogo;
     }
 }

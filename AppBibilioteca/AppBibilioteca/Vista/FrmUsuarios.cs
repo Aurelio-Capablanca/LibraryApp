@@ -62,7 +62,7 @@ namespace AppBibilioteca.Vista
 
         private void btnMostrar_Click(object sender, EventArgs e)
         {
-
+            MostrarUsuarios();
         }
     }
 }

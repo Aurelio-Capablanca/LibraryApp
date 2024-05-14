@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -19,13 +20,17 @@ namespace AppBibilioteca
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            
             ControladorUsuarios usuario = new ControladorUsuarios();
-            List<String> estaPresente = Acciones.ConvertirTablaDeDatos(usuario.RealizarConsultaTotal(ControladorUsuarios.consultarUsuario));            
-            MessageBox.Show(estaPresente[0]);
+            ArrayList estaPresente = Acciones.ConvertirTablaDeDatos(usuario.RealizarConsultaTotal(ControladorUsuarios.consultarUsuario));
+            MessageBox.Show(estaPresente[0].ToString());
+
             if (Convert.ToInt16(estaPresente[0]).Equals(0))
                 Application.Run(new FrmPrimerUsuario());
             else
                 Application.Run(new FrmLogin());
+
+            //Application.Run(new tester());
         }
     }
 }

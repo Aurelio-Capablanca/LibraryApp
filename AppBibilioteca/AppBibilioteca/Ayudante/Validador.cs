@@ -63,10 +63,11 @@ namespace AppBibilioteca.Ayudante
 
         public static int ValidarEnteros(string valor)
         {
-            int num = -1;
+            int num = 0;
             try
             {
                 num = Int32.Parse(valor);
+                return num;
             }
             catch (FormatException ex)
             {

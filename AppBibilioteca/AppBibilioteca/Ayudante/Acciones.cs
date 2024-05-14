@@ -38,18 +38,19 @@ namespace AppBibilioteca.Ayudante
             MessageBox.Show(columna + " " + fila);
         }
 
-        public static List<String> ConvertirTablaDeDatos(DataTable tabla)
+        public static ArrayList ConvertirTablaDeDatos(DataTable tabla)
         {
-            List<String> list = new List<String>();
+            ArrayList lista = new ArrayList();
             if (tabla != null && tabla.Rows.Count > 0)
             {
                 foreach (DataRow row in tabla.Rows)
                 {
-                    list.Add(row[0].ToString());
+                    lista.Add(row[0].ToString());
                 }
             }
-            return list;
+            return lista;
         }
+        
 
         public Usuario ConvertirUsuario(DataTable table)
         {

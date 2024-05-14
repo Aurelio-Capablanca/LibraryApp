@@ -55,5 +55,11 @@ namespace AppBibilioteca.Vista
         {
             AbrirFormulario<FrmUsuarios>();
         }
+
+        private void BtnCatalogo_Click(object sender, EventArgs e)
+        {
+            FrmCatalogoLibros catalogos = new FrmCatalogoLibros();
+            catalogos.Show();
+        }
     }
 }
