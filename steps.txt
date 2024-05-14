@@ -1,0 +1,32 @@
+- first user creation, app must detect if the table Users is empty,
+there just make a Select Count() to get a Zero or a number to determine the 
+presence of other registers, in order to avoid issues of performance in a future
+use it with a limit 1, as well to use an encrypt to save the pass safely (DONE)
+
+- make a login that could read the hash of the pass and say that is right or not
+and tell the user the case of use depending on the case, and after that store 
+the logged user into a constant value to avoid changes there (seek for possible
+limitations on C#)
+
+- make the basic crud for Users (done at first user [reuse it!]) and books and then a form
+to manage the lend books, and make that the user get a limit of time based on 
+calculations (make changes on the database) (Partially Done)
+
+- Make the mechanism for a book catalogue like some kind of basic pagination, done with 
+SQL search of swapping of records (Partially Done)
+
+
+
++ Mejorar el diseño de los formularios 
+(No alterar nombres de elementos ni programación solo diseño)
+
++ CRUD Libros (Create, Read, Update, Delete)
+
++ Reclamar Libros (para Usuarios internos)
+
++ Implementar Reglas en base a Roles 
+
++ Prestar/Devolver Libros (En proceso)
+
++ CRUD Usuarios (En proceso)
+
