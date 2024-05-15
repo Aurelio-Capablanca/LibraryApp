@@ -30,3 +30,10 @@ SQL search of swapping of records (Partially Done)
 
 + CRUD Usuarios (En proceso)
 
+
+
+- Singleton for Connection String usage, and for Session User Object
+
+
+
+
