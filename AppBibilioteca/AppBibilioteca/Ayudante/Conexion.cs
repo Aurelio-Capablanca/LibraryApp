@@ -13,14 +13,14 @@ namespace AppBibilioteca.Ayudante
 
         public static SqlConnection Conexionsql() {
             SqlConnection conexion;
-            string servidor = "localhost";
+            string servidor = "libraryapp.database.windows.net";//"localhost";
             string puerto = "1433";
             string baseDeDatos = "dbBiblioteca";
-            string usuario = "sa";
+            string usuario = "rootapp";//"sa";
             string clave = "#!954feae8sss";
             try
             {
-                string instruccion = $"Server={servidor},{puerto};Database={baseDeDatos};User Id={usuario};Password={clave};";
+                string instruccion = $"Server={servidor},{puerto};Database={baseDeDatos};User Id={usuario};Password={clave};";                
                 conexion = new SqlConnection(instruccion);
                 conexion.Open();
                 //MessageBox.Show("Conectado");

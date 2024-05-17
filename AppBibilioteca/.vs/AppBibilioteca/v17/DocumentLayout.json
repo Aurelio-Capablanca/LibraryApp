@@ -3,7 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\adalb\\Desktop\\Proyecto\\Personal\\Universidad\\Universidad 2024\\Ciclo 1\\Programaci\u00F3n I\\LibraryApp\\AppBibilioteca\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ACFC0B72-62AA-4C3D-BC7B-9F49DBD66216}|AppBibilioteca\\AppBibilioteca.csproj|C:\\Users\\adalb\\Desktop\\Proyecto\\Personal\\Universidad\\Universidad 2024\\Ciclo 1\\Programaci\u00F3n I\\LibraryApp\\AppBibilioteca\\appbibilioteca\\vista\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ACFC0B72-62AA-4C3D-BC7B-9F49DBD66216}|AppBibilioteca\\AppBibilioteca.csproj|c:\\users\\adalb\\desktop\\proyecto\\personal\\universidad\\universidad 2024\\ciclo 1\\programaci\u00F3n i\\libraryapp\\appbibilioteca\\appbibilioteca\\ayudante\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACFC0B72-62AA-4C3D-BC7B-9F49DBD66216}|AppBibilioteca\\AppBibilioteca.csproj|solutionrelative:appbibilioteca\\ayudante\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACFC0B72-62AA-4C3D-BC7B-9F49DBD66216}|AppBibilioteca\\AppBibilioteca.csproj|C:\\Users\\adalb\\Desktop\\Proyecto\\Personal\\Universidad\\Universidad 2024\\Ciclo 1\\Programaci\u00F3n I\\LibraryApp\\AppBibilioteca\\appbibilioteca\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACFC0B72-62AA-4C3D-BC7B-9F49DBD66216}|AppBibilioteca\\AppBibilioteca.csproj|solutionrelative:appbibilioteca\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACFC0B72-62AA-4C3D-BC7B-9F49DBD66216}|AppBibilioteca\\AppBibilioteca.csproj|c:\\users\\adalb\\desktop\\proyecto\\personal\\universidad\\universidad 2024\\ciclo 1\\programaci\u00F3n i\\libraryapp\\appbibilioteca\\appbibilioteca\\vista\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ACFC0B72-62AA-4C3D-BC7B-9F49DBD66216}|AppBibilioteca\\AppBibilioteca.csproj|solutionrelative:appbibilioteca\\vista\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,7 +19,7 @@
       "RelativeMoniker": "D:0:0:{ACFC0B72-62AA-4C3D-BC7B-9F49DBD66216}|AppBibilioteca\\AppBibilioteca.csproj|solutionrelative:appbibilioteca\\vista\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ACFC0B72-62AA-4C3D-BC7B-9F49DBD66216}|AppBibilioteca\\AppBibilioteca.csproj|c:\\users\\adalb\\desktop\\proyecto\\personal\\universidad\\universidad 2024\\ciclo 1\\programaci\u00F3n i\\libraryapp\\appbibilioteca\\appbibilioteca\\modelo\\salidas\\usuarioretorno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ACFC0B72-62AA-4C3D-BC7B-9F49DBD66216}|AppBibilioteca\\AppBibilioteca.csproj|C:\\Users\\adalb\\Desktop\\Proyecto\\Personal\\Universidad\\Universidad 2024\\Ciclo 1\\Programaci\u00F3n I\\LibraryApp\\AppBibilioteca\\appbibilioteca\\modelo\\salidas\\usuarioretorno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ACFC0B72-62AA-4C3D-BC7B-9F49DBD66216}|AppBibilioteca\\AppBibilioteca.csproj|solutionrelative:appbibilioteca\\modelo\\salidas\\usuarioretorno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -30,7 +38,7 @@
       "RelativeMoniker": "D:0:0:{ACFC0B72-62AA-4C3D-BC7B-9F49DBD66216}|AppBibilioteca\\AppBibilioteca.csproj|solutionrelative:appbibilioteca\\ayudante\\validador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ACFC0B72-62AA-4C3D-BC7B-9F49DBD66216}|AppBibilioteca\\AppBibilioteca.csproj|c:\\users\\adalb\\desktop\\proyecto\\personal\\universidad\\universidad 2024\\ciclo 1\\programaci\u00F3n i\\libraryapp\\appbibilioteca\\appbibilioteca\\ayudante\\accionesbasededatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ACFC0B72-62AA-4C3D-BC7B-9F49DBD66216}|AppBibilioteca\\AppBibilioteca.csproj|C:\\Users\\adalb\\Desktop\\Proyecto\\Personal\\Universidad\\Universidad 2024\\Ciclo 1\\Programaci\u00F3n I\\LibraryApp\\AppBibilioteca\\appbibilioteca\\ayudante\\accionesbasededatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ACFC0B72-62AA-4C3D-BC7B-9F49DBD66216}|AppBibilioteca\\AppBibilioteca.csproj|solutionrelative:appbibilioteca\\ayudante\\accionesbasededatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -41,7 +49,7 @@
       "RelativeMoniker": "D:0:0:{ACFC0B72-62AA-4C3D-BC7B-9F49DBD66216}|AppBibilioteca\\AppBibilioteca.csproj|solutionrelative:appbibilioteca\\controlador\\controladorlibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ACFC0B72-62AA-4C3D-BC7B-9F49DBD66216}|AppBibilioteca\\AppBibilioteca.csproj|c:\\users\\adalb\\desktop\\proyecto\\personal\\universidad\\universidad 2024\\ciclo 1\\programaci\u00F3n i\\libraryapp\\appbibilioteca\\appbibilioteca\\controlador\\sesioncontrolador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ACFC0B72-62AA-4C3D-BC7B-9F49DBD66216}|AppBibilioteca\\AppBibilioteca.csproj|C:\\Users\\adalb\\Desktop\\Proyecto\\Personal\\Universidad\\Universidad 2024\\Ciclo 1\\Programaci\u00F3n I\\LibraryApp\\AppBibilioteca\\appbibilioteca\\controlador\\sesioncontrolador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ACFC0B72-62AA-4C3D-BC7B-9F49DBD66216}|AppBibilioteca\\AppBibilioteca.csproj|solutionrelative:appbibilioteca\\controlador\\sesioncontrolador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -49,10 +57,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{92F4EBD6-4FAF-4503-987C-C0CC96ADC747}|..\\..\\..\\..\\..\\..\\..\\Proyectos\\Proyectos Anteriores\\Zeus Definitivo 5.0\\Zeus 5.0\\Zeus\\Zeus.csproj|c:\\users\\adalb\\desktop\\proyecto\\proyectos\\proyectos anteriores\\zeus definitivo 5.0\\zeus 5.0\\zeus\\controlador\\constructo_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ACFC0B72-62AA-4C3D-BC7B-9F49DBD66216}|AppBibilioteca\\AppBibilioteca.csproj|C:\\Users\\adalb\\Desktop\\Proyecto\\Personal\\Universidad\\Universidad 2024\\Ciclo 1\\Programaci\u00F3n I\\LibraryApp\\AppBibilioteca\\appbibilioteca\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ACFC0B72-62AA-4C3D-BC7B-9F49DBD66216}|AppBibilioteca\\AppBibilioteca.csproj|solutionrelative:appbibilioteca\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\adalb\\Desktop\\Proyecto\\Personal\\Universidad\\Universidad 2024\\Ciclo 1\\Programaci\u00F3n I\\MDI Forms\\Aguilar_Adalberto_p4\\Aguilar_Adalberto_p4\\Componentes\\FuncionesGenerales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -74,12 +78,25 @@
           ]
         },
         {
-          "DockedWidth": 70,
-          "SelectedChildIndex": 3,
+          "DockedWidth": 109,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "Conexion.cs",
+              "DocumentMoniker": "C:\\Users\\adalb\\Desktop\\Proyecto\\Personal\\Universidad\\Universidad 2024\\Ciclo 1\\Programaci\u00F3n I\\LibraryApp\\AppBibilioteca\\AppBibilioteca\\Ayudante\\Conexion.cs",
+              "RelativeDocumentMoniker": "AppBibilioteca\\Ayudante\\Conexion.cs",
+              "ToolTip": "C:\\Users\\adalb\\Desktop\\Proyecto\\Personal\\Universidad\\Universidad 2024\\Ciclo 1\\Programaci\u00F3n I\\LibraryApp\\AppBibilioteca\\AppBibilioteca\\Ayudante\\Conexion.cs",
+              "RelativeToolTip": "AppBibilioteca\\Ayudante\\Conexion.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABIAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T04:43:12.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "UsuarioRetorno.cs",
               "DocumentMoniker": "C:\\Users\\adalb\\Desktop\\Proyecto\\Personal\\Universidad\\Universidad 2024\\Ciclo 1\\Programaci\u00F3n I\\LibraryApp\\AppBibilioteca\\AppBibilioteca\\Modelo\\Salidas\\UsuarioRetorno.cs",
               "RelativeDocumentMoniker": "AppBibilioteca\\Modelo\\Salidas\\UsuarioRetorno.cs",
@@ -87,12 +104,11 @@
               "RelativeToolTip": "AppBibilioteca\\Modelo\\Salidas\\UsuarioRetorno.cs",
               "ViewState": "AQIAAC4AAAAAAAAAAAA3wDkAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T02:31:12.994Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-15T02:31:12.994Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "FrmUsuarios.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\adalb\\Desktop\\Proyecto\\Personal\\Universidad\\Universidad 2024\\Ciclo 1\\Programaci\u00F3n I\\LibraryApp\\AppBibilioteca\\AppBibilioteca\\Vista\\FrmUsuarios.cs",
               "RelativeDocumentMoniker": "AppBibilioteca\\Vista\\FrmUsuarios.cs",
@@ -104,32 +120,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\adalb\\Desktop\\Proyecto\\Personal\\Universidad\\Universidad 2024\\Ciclo 1\\Programaci\u00F3n I\\LibraryApp\\AppBibilioteca\\AppBibilioteca\\Program.cs",
               "RelativeDocumentMoniker": "AppBibilioteca\\Program.cs",
               "ToolTip": "C:\\Users\\adalb\\Desktop\\Proyecto\\Personal\\Universidad\\Universidad 2024\\Ciclo 1\\Programaci\u00F3n I\\LibraryApp\\AppBibilioteca\\AppBibilioteca\\Program.cs",
               "RelativeToolTip": "AppBibilioteca\\Program.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAqwBkAAAAMAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAIwBkAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T00:54:04.899Z"
+              "WhenOpened": "2024-05-13T00:54:04.899Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "FrmUsuarios.cs",
               "DocumentMoniker": "C:\\Users\\adalb\\Desktop\\Proyecto\\Personal\\Universidad\\Universidad 2024\\Ciclo 1\\Programaci\u00F3n I\\LibraryApp\\AppBibilioteca\\AppBibilioteca\\Vista\\FrmUsuarios.cs",
               "RelativeDocumentMoniker": "AppBibilioteca\\Vista\\FrmUsuarios.cs",
               "ToolTip": "C:\\Users\\adalb\\Desktop\\Proyecto\\Personal\\Universidad\\Universidad 2024\\Ciclo 1\\Programaci\u00F3n I\\LibraryApp\\AppBibilioteca\\AppBibilioteca\\Vista\\FrmUsuarios.cs",
               "RelativeToolTip": "AppBibilioteca\\Vista\\FrmUsuarios.cs",
-              "ViewState": "AQIAAEEAAAAAAAAAAAAowFAAAAA2AAAA",
+              "ViewState": "AQIAAEEAAAAAAAAAAAA5wFAAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-12T16:51:06.063Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "FuncionesGenerales.cs",
               "DocumentMoniker": "C:\\Users\\adalb\\Desktop\\Proyecto\\Personal\\Universidad\\Universidad 2024\\Ciclo 1\\Programaci\u00F3n I\\MDI Forms\\Aguilar_Adalberto_p4\\Aguilar_Adalberto_p4\\Componentes\\FuncionesGenerales.cs",
               "RelativeDocumentMoniker": "..\\..\\MDI Forms\\Aguilar_Adalberto_p4\\Aguilar_Adalberto_p4\\Componentes\\FuncionesGenerales.cs",
@@ -141,7 +158,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Users\\adalb\\Desktop\\Proyecto\\Personal\\Universidad\\Universidad 2024\\Ciclo 1\\Programaci\u00F3n I\\LibraryApp\\AppBibilioteca\\AppBibilioteca\\Modelo\\Usuario.cs",
               "RelativeDocumentMoniker": "AppBibilioteca\\Modelo\\Usuario.cs",
@@ -149,12 +166,11 @@
               "RelativeToolTip": "AppBibilioteca\\Modelo\\Usuario.cs",
               "ViewState": "AQIAAJMAAAAAAAAAAAAiwKgAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T22:23:04.28Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-12T22:23:04.28Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "ControladorUsuarios.cs",
               "DocumentMoniker": "C:\\Users\\adalb\\Desktop\\Proyecto\\Personal\\Universidad\\Universidad 2024\\Ciclo 1\\Programaci\u00F3n I\\LibraryApp\\AppBibilioteca\\AppBibilioteca\\Controlador\\ControladorUsuarios.cs",
               "RelativeDocumentMoniker": "AppBibilioteca\\Controlador\\ControladorUsuarios.cs",
@@ -162,18 +178,17 @@
               "RelativeToolTip": "AppBibilioteca\\Controlador\\ControladorUsuarios.cs",
               "ViewState": "AQIAACgAAAAAAAAAAAAwwDcAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-10T04:54:08.023Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-10T04:54:08.023Z"
             }
           ]
         },
         {
-          "DockedWidth": 49,
+          "DockedWidth": 10,
           "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "AccionesBaseDeDatos.cs",
               "DocumentMoniker": "C:\\Users\\adalb\\Desktop\\Proyecto\\Personal\\Universidad\\Universidad 2024\\Ciclo 1\\Programaci\u00F3n I\\LibraryApp\\AppBibilioteca\\AppBibilioteca\\Ayudante\\AccionesBaseDeDatos.cs",
               "RelativeDocumentMoniker": "AppBibilioteca\\Ayudante\\AccionesBaseDeDatos.cs",
@@ -181,12 +196,11 @@
               "RelativeToolTip": "AppBibilioteca\\Ayudante\\AccionesBaseDeDatos.cs",
               "ViewState": "AQIAABIAAAAAAAAAAAAAwDAAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-10T04:47:49.658Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-10T04:47:49.658Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "SesionControlador.cs",
               "DocumentMoniker": "C:\\Users\\adalb\\Desktop\\Proyecto\\Personal\\Universidad\\Universidad 2024\\Ciclo 1\\Programaci\u00F3n I\\LibraryApp\\AppBibilioteca\\AppBibilioteca\\Controlador\\SesionControlador.cs",
               "RelativeDocumentMoniker": "AppBibilioteca\\Controlador\\SesionControlador.cs",
@@ -194,12 +208,11 @@
               "RelativeToolTip": "AppBibilioteca\\Controlador\\SesionControlador.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAAAgAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T02:46:06.182Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-15T02:46:06.182Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "ControladorLibros.cs",
               "DocumentMoniker": "C:\\Users\\adalb\\Desktop\\Proyecto\\Personal\\Universidad\\Universidad 2024\\Ciclo 1\\Programaci\u00F3n I\\LibraryApp\\AppBibilioteca\\AppBibilioteca\\Controlador\\ControladorLibros.cs",
               "RelativeDocumentMoniker": "AppBibilioteca\\Controlador\\ControladorLibros.cs",
@@ -207,12 +220,11 @@
               "RelativeToolTip": "AppBibilioteca\\Controlador\\ControladorLibros.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T00:44:29.283Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-13T00:44:29.283Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Validador.cs",
               "DocumentMoniker": "C:\\Users\\adalb\\Desktop\\Proyecto\\Personal\\Universidad\\Universidad 2024\\Ciclo 1\\Programaci\u00F3n I\\LibraryApp\\AppBibilioteca\\AppBibilioteca\\Ayudante\\Validador.cs",
               "RelativeDocumentMoniker": "AppBibilioteca\\Ayudante\\Validador.cs",
@@ -220,25 +232,24 @@
               "RelativeToolTip": "AppBibilioteca\\Ayudante\\Validador.cs",
               "ViewState": "AQIAADcAAAAAAAAAAAAcwEEAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T22:26:55.343Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-12T22:26:55.343Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Frm_Administrador.cs",
               "DocumentMoniker": "C:\\Users\\adalb\\Desktop\\Proyecto\\Proyectos\\Proyectos Anteriores\\Zeus Definitivo 5.0\\Zeus 5.0\\Zeus\\Vista\\Frm_Administrador.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Proyectos\\Proyectos Anteriores\\Zeus Definitivo 5.0\\Zeus 5.0\\Zeus\\Vista\\Frm_Administrador.cs",
               "ToolTip": "C:\\Users\\adalb\\Desktop\\Proyecto\\Proyectos\\Proyectos Anteriores\\Zeus Definitivo 5.0\\Zeus 5.0\\Zeus\\Vista\\Frm_Administrador.cs",
               "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Proyectos\\Proyectos Anteriores\\Zeus Definitivo 5.0\\Zeus 5.0\\Zeus\\Vista\\Frm_Administrador.cs",
-              "ViewState": "AQIAAHMBAAAAAAAAAAAYwHoBAABBAAAA",
+              "ViewState": "AQIAAGwBAAAAAAAAAAA7wHoBAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-15T02:09:53.973Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "Funciones_admin.cs",
               "DocumentMoniker": "C:\\Users\\adalb\\Desktop\\Proyecto\\Proyectos\\Proyectos Anteriores\\Zeus Definitivo 5.0\\Zeus 5.0\\Zeus\\Modelo\\Funciones_admin.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Proyectos\\Proyectos Anteriores\\Zeus Definitivo 5.0\\Zeus 5.0\\Zeus\\Modelo\\Funciones_admin.cs",
@@ -246,12 +257,11 @@
               "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Proyectos\\Proyectos Anteriores\\Zeus Definitivo 5.0\\Zeus 5.0\\Zeus\\Modelo\\Funciones_admin.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T02:09:34.021Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-15T02:09:34.021Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "constructo_admin.cs",
               "DocumentMoniker": "C:\\Users\\adalb\\Desktop\\Proyecto\\Proyectos\\Proyectos Anteriores\\Zeus Definitivo 5.0\\Zeus 5.0\\Zeus\\Controlador\\constructo_admin.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Proyectos\\Proyectos Anteriores\\Zeus Definitivo 5.0\\Zeus 5.0\\Zeus\\Controlador\\constructo_admin.cs",
@@ -259,20 +269,18 @@
               "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Proyectos\\Proyectos Anteriores\\Zeus Definitivo 5.0\\Zeus 5.0\\Zeus\\Controlador\\constructo_admin.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T02:08:56.643Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-15T02:08:56.643Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Frm_Administrador.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\adalb\\Desktop\\Proyecto\\Proyectos\\Proyectos Anteriores\\Zeus Definitivo 5.0\\Zeus 5.0\\Zeus\\Vista\\Frm_Administrador.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Proyectos\\Proyectos Anteriores\\Zeus Definitivo 5.0\\Zeus 5.0\\Zeus\\Vista\\Frm_Administrador.cs",
               "ToolTip": "C:\\Users\\adalb\\Desktop\\Proyecto\\Proyectos\\Proyectos Anteriores\\Zeus Definitivo 5.0\\Zeus 5.0\\Zeus\\Vista\\Frm_Administrador.cs [Dise\u00F1o]",
               "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Proyectos\\Proyectos Anteriores\\Zeus Definitivo 5.0\\Zeus 5.0\\Zeus\\Vista\\Frm_Administrador.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T02:08:45.301Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-05-15T02:08:45.301Z"
             }
           ]
         }

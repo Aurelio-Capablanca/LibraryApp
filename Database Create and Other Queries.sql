@@ -1,6 +1,15 @@
-Create Database dbBiblioteca;
+Create Database dbBibliotecas;
 
 drop table TipoUsuarios
+
+-- #!954feae8$$$ Pass for SQL SErver
+
+/* 
+
+rootapp
+#!954feae8sss
+
+*/
 
 Create table TipoUsuarios(
 idTipoUsuarios int identity Primary key,
