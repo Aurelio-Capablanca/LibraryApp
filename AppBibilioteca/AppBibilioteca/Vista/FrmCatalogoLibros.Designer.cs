@@ -32,11 +32,11 @@
             this.lblBuscar = new System.Windows.Forms.Label();
             this.TxtBuscar = new System.Windows.Forms.TextBox();
             this.pPrestamo = new System.Windows.Forms.Panel();
-            this.nudNumeroLibros = new System.Windows.Forms.NumericUpDown();
-            this.BtnAcciones = new System.Windows.Forms.Button();
-            this.lblInicioPrestamo = new System.Windows.Forms.Label();
-            this.lblFinPrestamo = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblFinPrestamo = new System.Windows.Forms.Label();
+            this.lblInicioPrestamo = new System.Windows.Forms.Label();
+            this.BtnAcciones = new System.Windows.Forms.Button();
+            this.nudNumeroLibros = new System.Windows.Forms.NumericUpDown();
             this.pPrestamo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudNumeroLibros)).BeginInit();
             this.SuspendLayout();
@@ -63,6 +63,7 @@
             this.TxtBuscar.Name = "TxtBuscar";
             this.TxtBuscar.Size = new System.Drawing.Size(337, 20);
             this.TxtBuscar.TabIndex = 2;
+            this.TxtBuscar.TextChanged += new System.EventHandler(this.TxtBuscar_TextChanged);
             // 
             // pPrestamo
             // 
@@ -75,6 +76,42 @@
             this.pPrestamo.Name = "pPrestamo";
             this.pPrestamo.Size = new System.Drawing.Size(280, 394);
             this.pPrestamo.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(119, 183);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(10, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "-";
+            // 
+            // lblFinPrestamo
+            // 
+            this.lblFinPrestamo.AutoSize = true;
+            this.lblFinPrestamo.Location = new System.Drawing.Point(151, 183);
+            this.lblFinPrestamo.Name = "lblFinPrestamo";
+            this.lblFinPrestamo.Size = new System.Drawing.Size(68, 13);
+            this.lblFinPrestamo.TabIndex = 3;
+            this.lblFinPrestamo.Text = "Fin Prestamo";
+            // 
+            // lblInicioPrestamo
+            // 
+            this.lblInicioPrestamo.AutoSize = true;
+            this.lblInicioPrestamo.Location = new System.Drawing.Point(20, 183);
+            this.lblInicioPrestamo.Name = "lblInicioPrestamo";
+            this.lblInicioPrestamo.Size = new System.Drawing.Size(79, 13);
+            this.lblInicioPrestamo.TabIndex = 2;
+            this.lblInicioPrestamo.Text = "Inicio Prestamo";
+            // 
+            // BtnAcciones
+            // 
+            this.BtnAcciones.Location = new System.Drawing.Point(46, 277);
+            this.BtnAcciones.Name = "BtnAcciones";
+            this.BtnAcciones.Size = new System.Drawing.Size(173, 58);
+            this.BtnAcciones.TabIndex = 1;
+            this.BtnAcciones.Text = "Texto";
+            this.BtnAcciones.UseVisualStyleBackColor = true;
             // 
             // nudNumeroLibros
             // 
@@ -92,42 +129,6 @@
             0,
             0,
             0});
-            // 
-            // BtnAcciones
-            // 
-            this.BtnAcciones.Location = new System.Drawing.Point(46, 277);
-            this.BtnAcciones.Name = "BtnAcciones";
-            this.BtnAcciones.Size = new System.Drawing.Size(173, 58);
-            this.BtnAcciones.TabIndex = 1;
-            this.BtnAcciones.Text = "Texto";
-            this.BtnAcciones.UseVisualStyleBackColor = true;
-            // 
-            // lblInicioPrestamo
-            // 
-            this.lblInicioPrestamo.AutoSize = true;
-            this.lblInicioPrestamo.Location = new System.Drawing.Point(20, 183);
-            this.lblInicioPrestamo.Name = "lblInicioPrestamo";
-            this.lblInicioPrestamo.Size = new System.Drawing.Size(79, 13);
-            this.lblInicioPrestamo.TabIndex = 2;
-            this.lblInicioPrestamo.Text = "Inicio Prestamo";
-            // 
-            // lblFinPrestamo
-            // 
-            this.lblFinPrestamo.AutoSize = true;
-            this.lblFinPrestamo.Location = new System.Drawing.Point(151, 183);
-            this.lblFinPrestamo.Name = "lblFinPrestamo";
-            this.lblFinPrestamo.Size = new System.Drawing.Size(68, 13);
-            this.lblFinPrestamo.TabIndex = 3;
-            this.lblFinPrestamo.Text = "Fin Prestamo";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(119, 183);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(10, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "-";
             // 
             // FrmCatalogoLibros
             // 

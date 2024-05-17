@@ -82,6 +82,7 @@
     <Compile Include="Modelo\Entradas\CrearSesion.cs" />
     <Compile Include="Modelo\Libros.cs" />
     <Compile Include="Modelo\Salidas\CatalogoLibros.cs" />
+    <Compile Include="Modelo\Salidas\UsuarioRetorno.cs" />
     <Compile Include="Modelo\Usuario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

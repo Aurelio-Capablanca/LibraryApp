@@ -22,40 +22,46 @@ namespace AppBibilioteca.Vista
             flpLibros.AutoScroll = true;
         }
         
-        ControladorLibros control = new ControladorLibros();
+        private readonly ControladorLibros control = new ControladorLibros();
 
         private void InicializarLibros()
         {
             List<CatalogoLibros> listaLibros = control.ConvertirLibros();
-            foreach (CatalogoLibros subLista in listaLibros) 
-            {
-                MessageBox.Show(subLista.ID+" "+subLista.NombreLibro+" "+subLista.CantidadLibros);
-            }
+            //foreach (CatalogoLibros subLista in listaLibros) 
+            //{
+            //    MessageBox.Show(subLista.ID+" "+subLista.NombreLibro+" "+subLista.CantidadLibros);
+            //}
 
             for (int i = 0; i < listaLibros.Count; i++)
             {
                 int indice = i;
 
                 // Create a panel to represent a card
-                Panel cardPanel = new Panel();
-                cardPanel.BorderStyle = BorderStyle.FixedSingle;
-                cardPanel.Size = new System.Drawing.Size(200, 100);
+                Panel panelTarjeta = new Panel
+                {
+                    BorderStyle = BorderStyle.FixedSingle,
+                    Size = new System.Drawing.Size(200, 100)
+                };
 
                 // Create a Label for card content
-                Label label = new Label();
-                label.Text = listaLibros[i].NombreLibro;
-                label.Dock = DockStyle.Top; // Dock label to the top of the panel
-                cardPanel.Controls.Add(label);
+                Label texto = new Label
+                {
+                    Text = listaLibros[i].NombreLibro,
+                    Dock = DockStyle.Top
+                };
+                panelTarjeta.Controls.Add(texto);
 
                 // Create a Button for card content
-                Button button = new Button();
-                button.Text = "Click me";
-                button.Dock = DockStyle.Bottom; // Dock button to the bottom of the panel
-                button.Click += (s, evt) => MessageBox.Show("Button clicked on card " + listaLibros[indice].ID);
-                cardPanel.Controls.Add(button);
+                Button boton = new Button
+                {
+                    Text = "Click me",
+                    Dock = DockStyle.Bottom // Dock button to the bottom of the panel
+                };
+                boton.Click += (s, evt) => MessageBox.Show("Button clicked on card " + listaLibros[indice].ID);
+                panelTarjeta.Controls.Add(boton);
 
                 // Add the card panel to the FlowLayoutPanel
-                flpLibros.Controls.Add(cardPanel);
+                flpLibros.Controls.Add(panelTarjeta);
             }
         }
 
@@ -63,6 +69,11 @@ namespace AppBibilioteca.Vista
         private void FrmCatalogoLibros_Load(object sender, EventArgs e)
         {
             InicializarLibros();
+        }
+
+        private void TxtBuscar_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

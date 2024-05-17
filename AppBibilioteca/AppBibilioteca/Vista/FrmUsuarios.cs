@@ -1,5 +1,7 @@
-﻿using AppBibilioteca.Controlador;
+﻿using AppBibilioteca.Ayudante;
+using AppBibilioteca.Controlador;
 using AppBibilioteca.Modelo;
+using AppBibilioteca.Modelo.Salidas;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -38,7 +40,8 @@ namespace AppBibilioteca.Vista
             control.InsertarUsuario(usuario);
         }
 
-        private void MostrarUsuarios() {
+        private void MostrarUsuarios()
+        {
             dgvUsuarios.DataSource = control.RealizarConsultaTotal(ControladorUsuarios.consultarTodosLosUsuarios);
         }
 
@@ -53,7 +56,7 @@ namespace AppBibilioteca.Vista
             CmbRol.DataSource = control.RealizarConsultaTotal(ControladorUsuarios.consultarRol);
             CmbRol.DisplayMember = "RolUsuario";
             CmbRol.ValueMember = "idRol";
-        }        
+        }
 
         private void BtnCrear_Click(object sender, EventArgs e)
         {
@@ -63,6 +66,19 @@ namespace AppBibilioteca.Vista
         private void btnMostrar_Click(object sender, EventArgs e)
         {
             MostrarUsuarios();
+        }
+
+        private void dgvUsuarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int lugar = dgvUsuarios.CurrentRow.Index;
+            UsuarioRetorno obtenerUsuario = control.ObtenerUnUsuario(Validador.ValidarEnteros(this.dgvUsuarios[0, lugar].Value.ToString()));
+            MessageBox.Show(obtenerUsuario.ConvertirEnCadena());
+
+            TxtNombre.Text = obtenerUsuario.Nombre;
+            TxtApellido.Text = obtenerUsuario.Apellido;
+            TxtCorreo.Text = obtenerUsuario.Correo;
+            CmbTipoUsuario.SelectedValue = obtenerUsuario.TipoUsuario;
+            CmbRol.SelectedValue = obtenerUsuario.Rol;
         }
     }
 }

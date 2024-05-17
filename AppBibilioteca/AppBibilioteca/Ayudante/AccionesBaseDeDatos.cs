@@ -11,7 +11,7 @@ using AppBibilioteca.Modelo;
 
 namespace AppBibilioteca.Ayudante
 {
-    internal class AccionesBaseDeDatos
+    internal class AccionesBaseDeDatos : Acciones
     {
 
         public DataTable RealizarConsultaTotal(string query)

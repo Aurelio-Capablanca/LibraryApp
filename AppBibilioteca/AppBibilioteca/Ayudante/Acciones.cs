@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace AppBibilioteca.Ayudante
 {
-    internal class Acciones : AccionesBaseDeDatos
+    internal class Acciones
     {
         public static void ImprimirTablaDeDatos(DataTable tabla)
         {

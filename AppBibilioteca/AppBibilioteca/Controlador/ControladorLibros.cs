@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace AppBibilioteca.Controlador
 {
-    internal class ControladorLibros : Acciones
+    internal class ControladorLibros : AccionesBaseDeDatos
     {
         public const string consultarLibrosIncial = "select TOP 5  idLibro ,nombreLibro, cantidadLibros  from Libros lbr order by idLibro DESC ";
 

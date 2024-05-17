@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace AppBibilioteca.Controlador
 {
-    internal class SesionControlador : Acciones
+    internal class SesionControlador : AccionesBaseDeDatos
     {
         public bool IniciarSesion(CrearSesion sesion) {            
             Usuario usuario = ConvertirUsuario(RealizarConsultaConParametros(new ArrayList { sesion.Usuario }, "Select * from Usuarios Where correoUsuario = @param1"));            

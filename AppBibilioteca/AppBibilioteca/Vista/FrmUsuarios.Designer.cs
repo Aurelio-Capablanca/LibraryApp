@@ -44,6 +44,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dgvUsuarios = new System.Windows.Forms.DataGridView();
             this.btnMostrar = new System.Windows.Forms.Button();
+            this.txtID = new System.Windows.Forms.TextBox();
+            this.BtnActualizar = new System.Windows.Forms.Button();
+            this.BtnEliminar = new System.Windows.Forms.Button();
+            this.lblRol = new System.Windows.Forms.Label();
+            this.lblTipoUsuario = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,7 +79,7 @@
             // 
             // TxtClave
             // 
-            this.TxtClave.Location = new System.Drawing.Point(202, 71);
+            this.TxtClave.Location = new System.Drawing.Point(205, 71);
             this.TxtClave.Name = "TxtClave";
             this.TxtClave.Size = new System.Drawing.Size(121, 20);
             this.TxtClave.TabIndex = 24;
@@ -117,7 +122,7 @@
             // CmbTipoUsuario
             // 
             this.CmbTipoUsuario.FormattingEnabled = true;
-            this.CmbTipoUsuario.Location = new System.Drawing.Point(202, 129);
+            this.CmbTipoUsuario.Location = new System.Drawing.Point(205, 128);
             this.CmbTipoUsuario.Name = "CmbTipoUsuario";
             this.CmbTipoUsuario.Size = new System.Drawing.Size(121, 21);
             this.CmbTipoUsuario.TabIndex = 19;
@@ -169,10 +174,11 @@
             this.dgvUsuarios.Name = "dgvUsuarios";
             this.dgvUsuarios.Size = new System.Drawing.Size(511, 178);
             this.dgvUsuarios.TabIndex = 28;
+            this.dgvUsuarios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUsuarios_CellContentClick);
             // 
             // btnMostrar
             // 
-            this.btnMostrar.Location = new System.Drawing.Point(495, 100);
+            this.btnMostrar.Location = new System.Drawing.Point(495, 143);
             this.btnMostrar.Name = "btnMostrar";
             this.btnMostrar.Size = new System.Drawing.Size(75, 23);
             this.btnMostrar.TabIndex = 29;
@@ -180,11 +186,59 @@
             this.btnMostrar.UseVisualStyleBackColor = true;
             this.btnMostrar.Click += new System.EventHandler(this.btnMostrar_Click);
             // 
+            // txtID
+            // 
+            this.txtID.Location = new System.Drawing.Point(341, 184);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(33, 20);
+            this.txtID.TabIndex = 30;
+            // 
+            // BtnActualizar
+            // 
+            this.BtnActualizar.Location = new System.Drawing.Point(495, 100);
+            this.BtnActualizar.Name = "BtnActualizar";
+            this.BtnActualizar.Size = new System.Drawing.Size(75, 23);
+            this.BtnActualizar.TabIndex = 31;
+            this.BtnActualizar.Text = "Actualizar";
+            this.BtnActualizar.UseVisualStyleBackColor = true;
+            // 
+            // BtnEliminar
+            // 
+            this.BtnEliminar.Location = new System.Drawing.Point(495, 184);
+            this.BtnEliminar.Name = "BtnEliminar";
+            this.BtnEliminar.Size = new System.Drawing.Size(75, 23);
+            this.BtnEliminar.TabIndex = 32;
+            this.BtnEliminar.Text = "Eliminar";
+            this.BtnEliminar.UseVisualStyleBackColor = true;
+            // 
+            // lblRol
+            // 
+            this.lblRol.AutoSize = true;
+            this.lblRol.Location = new System.Drawing.Point(202, 167);
+            this.lblRol.Name = "lblRol";
+            this.lblRol.Size = new System.Drawing.Size(23, 13);
+            this.lblRol.TabIndex = 33;
+            this.lblRol.Text = "Rol";
+            // 
+            // lblTipoUsuario
+            // 
+            this.lblTipoUsuario.AutoSize = true;
+            this.lblTipoUsuario.Location = new System.Drawing.Point(202, 110);
+            this.lblTipoUsuario.Name = "lblTipoUsuario";
+            this.lblTipoUsuario.Size = new System.Drawing.Size(67, 13);
+            this.lblTipoUsuario.TabIndex = 34;
+            this.lblTipoUsuario.Text = "Tipo Usuario";
+            // 
             // FrmUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(610, 450);
+            this.Controls.Add(this.lblTipoUsuario);
+            this.Controls.Add(this.lblRol);
+            this.Controls.Add(this.BtnEliminar);
+            this.Controls.Add(this.BtnActualizar);
+            this.Controls.Add(this.txtID);
             this.Controls.Add(this.btnMostrar);
             this.Controls.Add(this.dgvUsuarios);
             this.Controls.Add(this.label6);
@@ -227,5 +281,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvUsuarios;
         private System.Windows.Forms.Button btnMostrar;
+        private System.Windows.Forms.TextBox txtID;
+        private System.Windows.Forms.Button BtnActualizar;
+        private System.Windows.Forms.Button BtnEliminar;
+        private System.Windows.Forms.Label lblRol;
+        private System.Windows.Forms.Label lblTipoUsuario;
     }
 }
