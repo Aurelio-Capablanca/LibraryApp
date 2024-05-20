@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -64,6 +65,24 @@ namespace AppBibilioteca.Vista
                     Text = "Click me",
                     Dock = DockStyle.Bottom
                 };
+
+                PictureBox imagen = new PictureBox
+                {
+                    Dock = DockStyle.Fill,
+                    SizeMode = PictureBoxSizeMode.StretchImage
+                };
+
+                if (listaLibros[i].Foto != null && listaLibros[i].Foto.Length > 1)
+                {
+                    using (MemoryStream stream = new MemoryStream(listaLibros[i].Foto))
+                    {
+                        MessageBox.Show(listaLibros[i].Foto.Length + " Iteration " + listaLibros[indice].ID);
+                        Image image = Image.FromStream(stream);
+                        imagen.Image = image;
+
+                    }
+                }
+                panelTarjeta.Controls.Add(imagen);
 
                 boton.Click += (s, evt) => PreReservarLibro(listaLibros[indice].ID);
                 panelTarjeta.Controls.Add(boton);

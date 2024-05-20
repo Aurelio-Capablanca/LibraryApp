@@ -22,6 +22,7 @@ namespace AppBibilioteca.Modelo
         private string nombreLibro;
         private string isbn;
         private int cantidadLibros;
+        private byte[] foto;
 
         public Libros() { }
 
@@ -38,7 +39,8 @@ namespace AppBibilioteca.Modelo
         public List<Int16> estado = new List<Int16>();
 
 
-        public int Id { 
+        public int Id
+        {
             get { return id; }
             set { id = value; }
         }
@@ -84,9 +86,9 @@ namespace AppBibilioteca.Modelo
             get { return isbn; }
             set
             {
-                if (!validar.ValidarAlfabeticos(value, 30, false))
+                if (!validar.ValidarAlfanumericos(value, 30, false))
                 {
-                    MessageBox.Show(string.Format("{0} Error en el Nombre", validar.Mensaje), "Error de entrada", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(string.Format("{0} Error en el ISBN", validar.Mensaje), "Error de entrada", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     estado.Add(0);
                 }
                 else
@@ -97,12 +99,20 @@ namespace AppBibilioteca.Modelo
             }
         }
 
-        public String ConvertirEnCadena() 
+        public byte[] Foto
         {
-            return string.Format("Libro[ ID:({0}) , nombre:({1}), ISBN:({2}), cantidadLibros:({3}) ]",
+            get { return foto; }
+            set { foto = value; }
+        }
+
+        public String ConvertirEnCadena()
+        {
+            return string.Format("Libro[ ID:({0}) , nombre:({1}), ISBN:({2}), cantidadLibros:({3}), Foto:({4}) ]",
                 this.id,
                 this.nombreLibro,
-                this.cantidadLibros);
+                this.cantidadLibros,
+                this.foto
+                );
         }
     }
 }

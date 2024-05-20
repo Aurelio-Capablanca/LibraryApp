@@ -15,9 +15,12 @@ namespace AppBibilioteca.Controlador
 {
     internal class ControladorLibros : AccionesBaseDeDatos
     {
-        public const string consultarLibrosIncial = "select TOP 5  idLibro ,nombreLibro, cantidadLibros  from Libros lbr order by idLibro DESC ";
 
         public const string consultarUnLibro = "select idLibro, nombreLibro, cantidadLibros from Libros where idLibro = @param1";
+
+        public const string obtenerTodosLosLibros = "select idLibro, nombreLibro, ISBN, cantidadLibros";
+
+        public const string consultarLibrosIncial = "select TOP 5  idLibro ,nombreLibro, cantidadLibros, foto  from Libros lbr order by idLibro DESC ";
 
         public List<CatalogoLibros> ConvertirLibros(string consulta)
         {
@@ -28,13 +31,22 @@ namespace AppBibilioteca.Controlador
                 SqlDataReader leer = ejecutar.ExecuteReader();
                 while (leer.Read())
                 {
-                    lista.Add(new CatalogoLibros(leer.GetInt32(0), leer.GetString(1), leer.GetInt32(2)));
+                    int idLibro = leer.GetInt32(0);
+                    string nombreLibro = leer.GetString(1);
+                    int cantidadLibros = leer.GetInt32(2);
+                    byte[] foto = new byte[1] {2};
+                    if (!leer.IsDBNull(3))
+                    {
+                        foto = (byte[])leer[3];
+                    }
+
+                    lista.Add(new CatalogoLibros(idLibro, nombreLibro, cantidadLibros, foto));
                 }
                 return lista;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                MessageBox.Show("Error en la obtencion de datos, consulte con su administrador",
+                MessageBox.Show("Error en la obtencion de datos, consulte con su administrador : " + ex.Message,
                 "Error Critico de conexión", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return new List<CatalogoLibros>();
             }
@@ -54,7 +66,7 @@ namespace AppBibilioteca.Controlador
                 SqlDataReader leer = ejecutar.ExecuteReader();
                 while (leer.Read())
                 {
-                   lista = new CatalogoLibros(leer.GetInt32(0), leer.GetString(1), leer.GetInt32(2));
+                    lista = new CatalogoLibros(leer.GetInt32(0), leer.GetString(1), leer.GetInt32(2));
                 }
                 return lista;
             }
@@ -70,7 +82,7 @@ namespace AppBibilioteca.Controlador
             }
         }
 
-        public int GuardarLibro(Libros libro) 
+        public int GuardarLibro(Libros libro)
         {
             string accion = libro.Id.Equals(0) ? "Insertar" : "Actualizar";
             for (int i = 0; i < libro.estado.Count; i++)
@@ -85,7 +97,7 @@ namespace AppBibilioteca.Controlador
             return libro.Id.Equals(0) ?
                 EjecutarAccion
                 (
-                    new ArrayList { },
+                    new ArrayList { libro.Nombre, libro.ISBN, libro.CantidadLibros, libro.Foto },
                     "Insert into Libros (nombreLibro, ISBN, cantidadLibros, foto) values (@param1, @param2, @param3, @param4)"
                 )
                 :

@@ -100,6 +100,7 @@
             this.BtnCrear.TabIndex = 36;
             this.BtnCrear.Text = "Crear";
             this.BtnCrear.UseVisualStyleBackColor = true;
+            this.BtnCrear.Click += new System.EventHandler(this.BtnCrear_Click);
             // 
             // OfdCargarImagen
             // 
