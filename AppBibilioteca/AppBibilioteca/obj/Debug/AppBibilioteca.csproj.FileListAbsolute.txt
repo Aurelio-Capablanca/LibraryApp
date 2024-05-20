@@ -52,3 +52,4 @@ C:\Users\adalb\Desktop\Proyecto\Personal\Universidad\Universidad 2024\Ciclo 1\Pr
 C:\Users\adalb\Desktop\Proyecto\Personal\Universidad\Universidad 2024\Ciclo 1\Programación I\LibraryApp\AppBibilioteca\AppBibilioteca\obj\Debug\AppBibilioteca.pdb
 C:\Users\adalb\Desktop\Proyecto\Personal\Universidad\Universidad 2024\Ciclo 1\Programación I\LibraryApp\AppBibilioteca\AppBibilioteca\obj\Debug\AppBibilioteca.Vista.tester.resources
 C:\Users\adalb\Desktop\Proyecto\Personal\Universidad\Universidad 2024\Ciclo 1\Programación I\LibraryApp\AppBibilioteca\AppBibilioteca\obj\Debug\AppBibilioteca.Vista.FrmCatalogoLibros.resources
+C:\Users\adalb\Desktop\Proyecto\Personal\Universidad\Universidad 2024\Ciclo 1\Programación I\LibraryApp\AppBibilioteca\AppBibilioteca\obj\Debug\AppBibilioteca.Vista.FrmLibro.resources

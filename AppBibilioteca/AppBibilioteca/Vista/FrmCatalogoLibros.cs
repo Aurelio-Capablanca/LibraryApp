@@ -1,5 +1,6 @@
 ﻿using AppBibilioteca.Ayudante;
 using AppBibilioteca.Controlador;
+using AppBibilioteca.Modelo;
 using AppBibilioteca.Modelo.Salidas;
 using System;
 using System.Collections;
@@ -21,29 +22,36 @@ namespace AppBibilioteca.Vista
             InitializeComponent();
             flpLibros.AutoScroll = true;
         }
-        
+
         private readonly ControladorLibros control = new ControladorLibros();
+
+
+        private void PreReservarLibro(Int32 id)
+        {
+            CatalogoLibros libro = control.ObtenerUnLibro(ControladorLibros.consultarUnLibro, id);
+
+            nudNumeroLibros.Maximum = libro.CantidadLibros;
+            lblInicioPrestamo.Text = DateTime.Now.ToString("dd-MM-yyyy");
+            lblFinPrestamo.Text = DateTime.Now.AddDays(15).ToString("dd-MM-yyyy");
+            txtidLibro.Text = libro.ID.ToString();
+            MessageBox.Show(libro.ID.ToString());
+        }
+
 
         private void InicializarLibros()
         {
-            List<CatalogoLibros> listaLibros = control.ConvertirLibros();
-            //foreach (CatalogoLibros subLista in listaLibros) 
-            //{
-            //    MessageBox.Show(subLista.ID+" "+subLista.NombreLibro+" "+subLista.CantidadLibros);
-            //}
+            List<CatalogoLibros> listaLibros = control.ConvertirLibros(ControladorLibros.consultarLibrosIncial);
 
             for (int i = 0; i < listaLibros.Count; i++)
             {
                 int indice = i;
 
-                // Create a panel to represent a card
                 Panel panelTarjeta = new Panel
                 {
                     BorderStyle = BorderStyle.FixedSingle,
                     Size = new System.Drawing.Size(200, 100)
                 };
 
-                // Create a Label for card content
                 Label texto = new Label
                 {
                     Text = listaLibros[i].NombreLibro,
@@ -51,16 +59,15 @@ namespace AppBibilioteca.Vista
                 };
                 panelTarjeta.Controls.Add(texto);
 
-                // Create a Button for card content
                 Button boton = new Button
                 {
                     Text = "Click me",
-                    Dock = DockStyle.Bottom // Dock button to the bottom of the panel
+                    Dock = DockStyle.Bottom
                 };
-                boton.Click += (s, evt) => MessageBox.Show("Button clicked on card " + listaLibros[indice].ID);
+
+                boton.Click += (s, evt) => PreReservarLibro(listaLibros[indice].ID);
                 panelTarjeta.Controls.Add(boton);
 
-                // Add the card panel to the FlowLayoutPanel
                 flpLibros.Controls.Add(panelTarjeta);
             }
         }
@@ -74,6 +81,13 @@ namespace AppBibilioteca.Vista
         private void TxtBuscar_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void BtnAcciones_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(AccesoGlobal.ObtenerUsuarios().ConvertirEnCadena());
+            ControladorPrestamos controlPrestamos = new ControladorPrestamos();
+            controlPrestamos.RealizarPrestamo(new PrestamoLibro { IdLibro = Convert.ToInt32(txtidLibro.Text), IdUsuario = AccesoGlobal.ObtenerUsuarios().Id, FechaPrestamo = lblInicioPrestamo.Text, FechaDevolucion = lblFinPrestamo.Text });
         }
     }
 }

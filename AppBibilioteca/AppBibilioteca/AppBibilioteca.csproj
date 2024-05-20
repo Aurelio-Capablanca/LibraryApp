@@ -71,6 +71,7 @@
     <Compile Include="Ayudante\Validador.cs" />
     <Compile Include="Ayudante\Conexion.cs" />
     <Compile Include="Controlador\ControladorLibros.cs" />
+    <Compile Include="Controlador\ControladorPrestamos.cs" />
     <Compile Include="Controlador\ControladorUsuarios.cs" />
     <Compile Include="Controlador\SesionControlador.cs" />
     <Compile Include="Form1.cs">
@@ -81,6 +82,7 @@
     </Compile>
     <Compile Include="Modelo\Entradas\CrearSesion.cs" />
     <Compile Include="Modelo\Libros.cs" />
+    <Compile Include="Modelo\PrestamoLibro.cs" />
     <Compile Include="Modelo\Salidas\CatalogoLibros.cs" />
     <Compile Include="Modelo\Salidas\UsuarioRetorno.cs" />
     <Compile Include="Modelo\Usuario.cs" />
@@ -92,6 +94,12 @@
     </Compile>
     <Compile Include="Vista\FrmCatalogoLibros.Designer.cs">
       <DependentUpon>FrmCatalogoLibros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\FrmLibro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\FrmLibro.Designer.cs">
+      <DependentUpon>FrmLibro.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\FrmLogin.cs">
       <SubType>Form</SubType>
@@ -137,6 +145,9 @@
     </Compile>
     <EmbeddedResource Include="Vista\FrmCatalogoLibros.resx">
       <DependentUpon>FrmCatalogoLibros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\FrmLibro.resx">
+      <DependentUpon>FrmLibro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>

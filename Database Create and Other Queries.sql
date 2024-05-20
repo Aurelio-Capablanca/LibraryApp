@@ -79,7 +79,7 @@ devolucion bit default 0
   (seria interesante enviar correos pero dependera de que tanto tiempo quede)*/
 
 alter table PrestamoLibros add fechaPrestamo date default Cast(GETDATE() as date);
-alter table PrestamoLibros add fechaDevolucion date 
+alter table PrestamoLibros add fechaDevolucion date; 
 
 
 create table Roles(
@@ -98,26 +98,24 @@ alter table Usuarios add foreign key (idRol) references Roles(idRol)
 /*Other scripting*/
 
 select Cast(GETDATE() as date) 
+select * from roles 
 
 insert into Roles (RolUsuario) values 
 ('Root'),
 ('Admin'),
-('Staff')
+('Staff');
 
 insert into Roles (RolUsuario) values 
-('External')
+('External');
 
 insert into TipoUsuarios (TipoUsuario) values
 ('Interno'),
-('Externo')
+('Externo');
 
 
 
 insert into Usuarios (nombreUsuario,apellidoUsuario,correoUsuario,claveUsuario,bloqueado,idTipoUsuario,idRol)
 values ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}')
-
-insert into Usuarios (nombreUsuario,apellidoUsuario,correoUsuario,claveUsuario,bloqueado,idTipoUsuario,idRol)
-values (@param1, @param2, @param3, @param4, @param5, @param6, @param7)
 
 
 select * from Usuarios u;
@@ -153,9 +151,14 @@ select TOP 5  idLibro ,nombreLibro, cantidadLibros  from Libros lbr order by idL
 
 select us.idUsuarios, us.nombreUsuario, us.apellidoUsuario , us.correoUsuario, us.idTipoUsuario, us.idRol  from Usuarios us Where us.idUsuarios = @param1
 
+insert into Usuarios (nombreUsuario,apellidoUsuario,correoUsuario,claveUsuario,bloqueado,idTipoUsuario,idRol)
+values (@param1, @param2, @param3, @param4, @param5, @param6, @param7)
+
 /* 
  user: john@protonmail.com
  Pass: 123er
 */
+
+update Usuarios set nombreUsuario = @param2, apellidoUsuario = @param3, correoUsuario = @param4, idTipoUsuario = @param5, idRol = @param6 where idUsuarios = @param1
 
 

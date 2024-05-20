@@ -37,6 +37,7 @@
             this.lblInicioPrestamo = new System.Windows.Forms.Label();
             this.BtnAcciones = new System.Windows.Forms.Button();
             this.nudNumeroLibros = new System.Windows.Forms.NumericUpDown();
+            this.txtidLibro = new System.Windows.Forms.TextBox();
             this.pPrestamo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudNumeroLibros)).BeginInit();
             this.SuspendLayout();
@@ -67,6 +68,7 @@
             // 
             // pPrestamo
             // 
+            this.pPrestamo.Controls.Add(this.txtidLibro);
             this.pPrestamo.Controls.Add(this.label1);
             this.pPrestamo.Controls.Add(this.lblFinPrestamo);
             this.pPrestamo.Controls.Add(this.lblInicioPrestamo);
@@ -112,6 +114,7 @@
             this.BtnAcciones.TabIndex = 1;
             this.BtnAcciones.Text = "Texto";
             this.BtnAcciones.UseVisualStyleBackColor = true;
+            this.BtnAcciones.Click += new System.EventHandler(this.BtnAcciones_Click);
             // 
             // nudNumeroLibros
             // 
@@ -129,6 +132,13 @@
             0,
             0,
             0});
+            // 
+            // txtidLibro
+            // 
+            this.txtidLibro.Location = new System.Drawing.Point(46, 141);
+            this.txtidLibro.Name = "txtidLibro";
+            this.txtidLibro.Size = new System.Drawing.Size(100, 20);
+            this.txtidLibro.TabIndex = 5;
             // 
             // FrmCatalogoLibros
             // 
@@ -161,5 +171,6 @@
         private System.Windows.Forms.Label lblInicioPrestamo;
         private System.Windows.Forms.Button BtnAcciones;
         private System.Windows.Forms.NumericUpDown nudNumeroLibros;
+        private System.Windows.Forms.TextBox txtidLibro;
     }
 }

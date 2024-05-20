@@ -54,7 +54,7 @@ namespace AppBibilioteca.Vista
                 MessageBox.Show("Las Claves deben ser iguales", "Error de entrada", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            control.InsertarUsuario(usuario);
+            control.GuardarUsuario(usuario);
         }
 
 

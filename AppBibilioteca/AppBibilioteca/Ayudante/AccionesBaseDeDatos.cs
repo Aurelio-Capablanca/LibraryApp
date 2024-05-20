@@ -77,9 +77,18 @@ namespace AppBibilioteca.Ayudante
                 }
                 retorno = Convert.ToInt32(consultaEjecutar.ExecuteNonQuery());
                 if (retorno >= 1)
-                    MessageBox.Show("El usuario se ingreso de manera exitosa", "Proceso completado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("El registro se ingreso de manera exitosa", "Proceso completado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 else
-                    MessageBox.Show("El usuario no se a podido ingresar", "Error en el proceso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("El registro no se a podido ingresar", "Error en el proceso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (SqlException ex)
+            {
+                string errorDetails = $"SQL Error: {ex.Message}\n" +
+                                      $"Line Number: {ex.LineNumber}\n" +
+                                      $"Source: {ex.Source}\n" +
+                                      $"Procedure: {ex.Procedure}\n" +
+                                      $"StackTrace: {ex.StackTrace}";
+                MessageBox.Show($"Se produjo un error de SQL:\n{errorDetails}", "Error de SQL", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (Exception ex)
             {

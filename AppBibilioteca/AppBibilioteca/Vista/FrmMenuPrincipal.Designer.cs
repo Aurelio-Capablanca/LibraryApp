@@ -82,6 +82,7 @@
             this.BtnLibros.TabIndex = 5;
             this.BtnLibros.Text = "Libros";
             this.BtnLibros.UseVisualStyleBackColor = true;
+            this.BtnLibros.Click += new System.EventHandler(this.BtnLibros_Click);
             // 
             // BtnCatalogo
             // 

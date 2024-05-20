@@ -24,22 +24,32 @@ namespace AppBibilioteca.Controlador
 
         public const string consultarTodosLosUsuarios = "select us.idUsuarios, us.nombreUsuario, us.apellidoUsuario, us.correoUsuario, CASE when us.bloqueado = 0 then 'No' When us.bloqueado = 1 then 'Si' else 'Indeterminado' end as bloqueo from Usuarios us Inner join TipoUsuarios tu on idTipoUsuarios = us.idTipoUsuario  inner join Roles r  on r.idRol = us.idRol";
 
-        public int InsertarUsuario(Usuario usuario)
+        public int GuardarUsuario(Usuario usuario)
         {
+            string accion = usuario.Id.Equals(0) ? "Insertar" : "Actualizar";
             for (int i = 0; i < usuario.estado.Count; i++)
             {
                 if (usuario.estado[i].Equals(0))
                 {
-                    MessageBox.Show("El usuario no se a podido ingresar***", "Error de Datos", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("El Usuario no se a podido " + accion, "Error de Datos", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     usuario.estado.Clear();
                     return 0;
                 }
-            }
-            return EjecutarAccion(
+            }            
+            return usuario.Id.Equals(0) ? 
+                EjecutarAccion
+                (
                 new ArrayList { usuario.Nombre, usuario.Apellido, usuario.Correo, usuario.Clave, false, usuario.TipoUsuario, usuario.Rol },
                 "insert into Usuarios (nombreUsuario,apellidoUsuario,correoUsuario,claveUsuario,bloqueado,idTipoUsuario,idRol) values (@param1, @param2, @param3, @param4, @param5, @param6, @param7)"
+                )
+                : 
+                EjecutarAccion
+                (
+                    new ArrayList {usuario.Nombre, usuario.Apellido, usuario.Correo, usuario.TipoUsuario, usuario.Rol, usuario.Id},
+                    "update Usuarios set nombreUsuario = @param1, apellidoUsuario = @param2, correoUsuario = @param3, idTipoUsuario = @param4, idRol = @param5 where idUsuarios = @param6"
                 );
         }
+
 
         public UsuarioRetorno ObtenerUnUsuario(int idUsuario)
         {

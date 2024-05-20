@@ -12,6 +12,9 @@ namespace AppBibilioteca.Modelo.Salidas
         private string nombreLibro;
         private int cantidadLibros;
 
+        public CatalogoLibros() 
+        { }
+
         public CatalogoLibros(int id, string nombreLibro, int cantidadLibros) { 
             this.id = id;
             this.nombreLibro = nombreLibro;

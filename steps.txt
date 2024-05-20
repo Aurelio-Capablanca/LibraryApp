@@ -28,7 +28,7 @@ SQL search of swapping of records (Partially Done)
 
 + Prestar/Devolver Libros (En proceso)
 
-+ CRUD Usuarios (En proceso)
++ CRUD Usuarios (En proceso) - Follow with this 
 
 
 

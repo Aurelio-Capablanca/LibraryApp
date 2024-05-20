@@ -18,14 +18,13 @@ namespace AppBibilioteca.Vista
     {
 
         private readonly ControladorUsuarios control = new ControladorUsuarios();
+        private readonly Usuario usuario = new Usuario();
 
-        private void CrearPrimerUsuario()
-        {
-            Usuario usuario = new Usuario();
+        private void CrearUsuario()
+        {            
             usuario.Nombre = TxtNombre.Text;
             usuario.Apellido = TxtApellido.Text;
             usuario.Correo = TxtCorreo.Text;
-
             usuario.TipoUsuario = Convert.ToInt16(CmbTipoUsuario.SelectedValue);
             usuario.Rol = Convert.ToInt16(CmbRol.SelectedValue);
             if (TxtClave.Text.Equals(TxtConfirmar.Text))
@@ -37,7 +36,18 @@ namespace AppBibilioteca.Vista
                 MessageBox.Show("Las Claves deben ser iguales", "Error de entrada", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            control.InsertarUsuario(usuario);
+            control.GuardarUsuario(usuario);
+        }
+
+        private void ActualizarUsuario() 
+        {
+            usuario.Id = Convert.ToInt32(txtID.Text);
+            usuario.Nombre = TxtNombre.Text;
+            usuario.Apellido = TxtApellido.Text;
+            usuario.Correo = TxtCorreo.Text;
+            usuario.TipoUsuario = Convert.ToInt16(CmbTipoUsuario.SelectedValue);
+            usuario.Rol = Convert.ToInt16(CmbRol.SelectedValue);
+            control.GuardarUsuario(usuario);
         }
 
         private void MostrarUsuarios()
@@ -60,7 +70,7 @@ namespace AppBibilioteca.Vista
 
         private void BtnCrear_Click(object sender, EventArgs e)
         {
-            CrearPrimerUsuario();
+            CrearUsuario();
         }
 
         private void btnMostrar_Click(object sender, EventArgs e)
@@ -74,11 +84,17 @@ namespace AppBibilioteca.Vista
             UsuarioRetorno obtenerUsuario = control.ObtenerUnUsuario(Validador.ValidarEnteros(this.dgvUsuarios[0, lugar].Value.ToString()));
             MessageBox.Show(obtenerUsuario.ConvertirEnCadena());
 
+            txtID.Text = obtenerUsuario.ID.ToString();
             TxtNombre.Text = obtenerUsuario.Nombre;
             TxtApellido.Text = obtenerUsuario.Apellido;
             TxtCorreo.Text = obtenerUsuario.Correo;
             CmbTipoUsuario.SelectedValue = obtenerUsuario.TipoUsuario;
             CmbRol.SelectedValue = obtenerUsuario.Rol;
+        }
+
+        private void BtnActualizar_Click(object sender, EventArgs e)
+        {
+            ActualizarUsuario();
         }
     }
 }
