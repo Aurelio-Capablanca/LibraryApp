@@ -181,5 +181,10 @@ namespace AppBibilioteca.Modelo
                 this.TipoUsuario,
                 this.Rol);
         }
+
+        public bool EsUsuarioNulo() 
+        {
+            return this.nombre == null;
+        }
     }
 }

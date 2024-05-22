@@ -20,20 +20,37 @@ SQL search of swapping of records (Partially Done)
 + Mejorar el diseño de los formularios 
 (No alterar nombres de elementos ni programación solo diseño)
 
-+ CRUD Libros (Create, Read, Update, Delete)
++ CRUD Libros (Create, Read, Update, Delete) ** Partially Done
 
-+ Reclamar Libros (para Usuarios internos)
-
-+ Implementar Reglas en base a Roles 
++ Reclamar Libros (para Usuarios internos) 
 
 + Prestar/Devolver Libros (En proceso)
 
+  * when the user clicks over a card the data of the book will get loaded
+    then
+
 + CRUD Usuarios (En proceso) - Follow with this 
 
-
+  * missing delete only
 
 - Singleton for Connection String usage, and for Session User Object
 
 
+Get-NetIPAddress
+
+- end page for request books - Done 
+- make dashboard for external user
+- make book CRUD - On working
+- make return Books from External books 
+
+
+CRUD Book
+
+Create - Done
+Read - Done
+Update - Done
+Delete - Working
+
+Fix and enhance Login ***
 
 

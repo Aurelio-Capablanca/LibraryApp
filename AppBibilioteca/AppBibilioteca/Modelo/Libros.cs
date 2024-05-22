@@ -26,6 +26,15 @@ namespace AppBibilioteca.Modelo
 
         public Libros() { }
 
+        public Libros(int id, string nombreLibro, string isbn, int cantidaLibros, byte[] foto)
+        {
+            this.id = id;
+            this.nombreLibro = nombreLibro;
+            this.isbn = isbn;
+            this.cantidadLibros = cantidaLibros;
+            this.foto = foto;
+        }
+
         public Libros(int id, string nombreLibro, string isbn, int cantidaLibros)
         {
             this.id = id;

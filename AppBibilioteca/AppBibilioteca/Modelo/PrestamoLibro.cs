@@ -19,10 +19,9 @@ devolucion bit default 0
         private int idLibro;
         private int idUsuario;
         private byte devolucion;
+        private int cantidad;
         private string fechaPrestamo;
         private string fechaDevolucion;
-
-
 
 
         public int Id
@@ -59,6 +58,12 @@ devolucion bit default 0
         {
             get { return fechaDevolucion;}
             set { fechaDevolucion = value;}
+        }
+
+        public int Cantidad 
+        {
+            get { return cantidad; } 
+            set { cantidad = value; }
         }
     }
 }

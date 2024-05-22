@@ -32,12 +32,12 @@
             this.lblBuscar = new System.Windows.Forms.Label();
             this.TxtBuscar = new System.Windows.Forms.TextBox();
             this.pPrestamo = new System.Windows.Forms.Panel();
+            this.txtidLibro = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lblFinPrestamo = new System.Windows.Forms.Label();
             this.lblInicioPrestamo = new System.Windows.Forms.Label();
             this.BtnAcciones = new System.Windows.Forms.Button();
             this.nudNumeroLibros = new System.Windows.Forms.NumericUpDown();
-            this.txtidLibro = new System.Windows.Forms.TextBox();
             this.pPrestamo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudNumeroLibros)).BeginInit();
             this.SuspendLayout();
@@ -46,7 +46,7 @@
             // 
             this.flpLibros.Location = new System.Drawing.Point(12, 76);
             this.flpLibros.Name = "flpLibros";
-            this.flpLibros.Size = new System.Drawing.Size(449, 347);
+            this.flpLibros.Size = new System.Drawing.Size(514, 384);
             this.flpLibros.TabIndex = 0;
             // 
             // lblBuscar
@@ -74,10 +74,17 @@
             this.pPrestamo.Controls.Add(this.lblInicioPrestamo);
             this.pPrestamo.Controls.Add(this.BtnAcciones);
             this.pPrestamo.Controls.Add(this.nudNumeroLibros);
-            this.pPrestamo.Location = new System.Drawing.Point(484, 29);
+            this.pPrestamo.Location = new System.Drawing.Point(532, 37);
             this.pPrestamo.Name = "pPrestamo";
-            this.pPrestamo.Size = new System.Drawing.Size(280, 394);
+            this.pPrestamo.Size = new System.Drawing.Size(280, 423);
             this.pPrestamo.TabIndex = 3;
+            // 
+            // txtidLibro
+            // 
+            this.txtidLibro.Location = new System.Drawing.Point(104, 224);
+            this.txtidLibro.Name = "txtidLibro";
+            this.txtidLibro.Size = new System.Drawing.Size(35, 20);
+            this.txtidLibro.TabIndex = 5;
             // 
             // label1
             // 
@@ -133,18 +140,11 @@
             0,
             0});
             // 
-            // txtidLibro
-            // 
-            this.txtidLibro.Location = new System.Drawing.Point(46, 141);
-            this.txtidLibro.Name = "txtidLibro";
-            this.txtidLibro.Size = new System.Drawing.Size(100, 20);
-            this.txtidLibro.TabIndex = 5;
-            // 
             // FrmCatalogoLibros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(824, 472);
             this.Controls.Add(this.pPrestamo);
             this.Controls.Add(this.TxtBuscar);
             this.Controls.Add(this.lblBuscar);
