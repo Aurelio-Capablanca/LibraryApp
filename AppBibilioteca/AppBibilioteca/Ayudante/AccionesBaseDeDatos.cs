@@ -22,13 +22,12 @@ namespace AppBibilioteca.Ayudante
                 SqlCommand ejecutar = new SqlCommand(query, Conexion.Conexionsql());
                 SqlDataAdapter adaptar = new SqlDataAdapter(ejecutar);
                 retorno = new DataTable();
-                adaptar.Fill(retorno);
-                //ImprimirTablaDeDatos(retorno);
+                adaptar.Fill(retorno);                
                 return retorno;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                MessageBox.Show("Error en la obtencion de datos, consulte con su administrador",
+                MessageBox.Show("Error en la obtencion de datos, consulte con su administrador:  "+ex,
                 "Error Critico de conexión", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return new DataTable();
             }
@@ -39,7 +38,7 @@ namespace AppBibilioteca.Ayudante
         }
 
         protected DataTable RealizarConsultaConParametros(ArrayList parametros, string query)
-        {
+        {            
             DataTable retorno;
             try
             {
@@ -65,7 +64,7 @@ namespace AppBibilioteca.Ayudante
             }
         }
 
-        protected int EjecutarAccion(ArrayList parametros, string query) 
+        protected int EjecutarAccion(ArrayList parametros, string query, string modulo, string accion) 
         {
             int retorno = 0;
             try
@@ -77,9 +76,9 @@ namespace AppBibilioteca.Ayudante
                 }
                 retorno = Convert.ToInt32(consultaEjecutar.ExecuteNonQuery());
                 if (retorno >= 1)
-                    MessageBox.Show("El registro se ingreso de manera exitosa", "Proceso completado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("El registro se "+ accion +" "+ modulo + " de manera exitosa", "Proceso completado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 else
-                    MessageBox.Show("El registro no se a podido ingresar", "Error en el proceso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("El registro no se a podido " + accion, "Error en el proceso", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (SqlException ex)
             {

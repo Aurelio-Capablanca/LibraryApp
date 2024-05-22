@@ -95,6 +95,12 @@
     <Compile Include="Vista\FrmCatalogoLibros.Designer.cs">
       <DependentUpon>FrmCatalogoLibros.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\FrmExternos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\FrmExternos.Designer.cs">
+      <DependentUpon>FrmExternos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\FrmLibro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +118,12 @@
     </Compile>
     <Compile Include="Vista\FrmMenuPrincipal.Designer.cs">
       <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\FrmPanelExternos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\FrmPanelExternos.Designer.cs">
+      <DependentUpon>FrmPanelExternos.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\FrmPrimerUsuario.cs">
       <SubType>Form</SubType>
@@ -146,6 +158,9 @@
     <EmbeddedResource Include="Vista\FrmCatalogoLibros.resx">
       <DependentUpon>FrmCatalogoLibros.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vista\FrmExternos.resx">
+      <DependentUpon>FrmExternos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\FrmLibro.resx">
       <DependentUpon>FrmLibro.cs</DependentUpon>
     </EmbeddedResource>
@@ -154,6 +169,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\FrmMenuPrincipal.resx">
       <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\FrmPanelExternos.resx">
+      <DependentUpon>FrmPanelExternos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\FrmPrimerUsuario.resx">
       <DependentUpon>FrmPrimerUsuario.cs</DependentUpon>

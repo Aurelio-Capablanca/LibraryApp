@@ -33,11 +33,27 @@ namespace AppBibilioteca.Vista
             bool verificar = sesion.IniciarSesion(new CrearSesion(TxtCorreo.Text, TxtClave.Text));
             if (verificar.Equals(true))
             {
-                MessageBox.Show(AccesoGlobal.ObtenerUsuarios().ConvertirEnCadena());
+                //MessageBox.Show(AccesoGlobal.ObtenerUsuarios().ConvertirEnCadena());
                 this.Hide();
-                FrmMenuPrincipal principal = new FrmMenuPrincipal();
-                principal.Show();
+                if (AccesoGlobal.ObtenerUsuarios().TipoUsuario.Equals(1))
+                {
+                    FrmMenuPrincipal principal = new FrmMenuPrincipal();
+                    principal.Show();
+                }
+                else 
+                { 
+                    FrmPanelExternos externos = new FrmPanelExternos();
+                    externos.Show();
+                }
+                
             }
+        }
+
+        private void BtnPerfil_Click(object sender, EventArgs e)
+        {
+            FrmExternos externos = new FrmExternos();
+            externos.Show();
+            this.Hide();
         }
     }
 }

@@ -16,12 +16,12 @@ namespace AppBibilioteca.Controlador
     {
         public bool IniciarSesion(CrearSesion sesion) {            
             Usuario usuario = ConvertirUsuario(RealizarConsultaConParametros(new ArrayList { sesion.Usuario }, "Select * from Usuarios Where correoUsuario = @param1"));            
-            if (EsNulo(usuario)) {
-                MessageBox.Show("Usuario Bloquedo", "Error de entrada", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            if (usuario.EsUsuarioNulo()) {
+                MessageBox.Show("Usuario Inexistente", "Error de entrada", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
             if (usuario.Bloqueado.Equals(1)) {
-                MessageBox.Show("Usuario Bloquedo", "Error de entrada", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Usuario Bloqueado", "Error de entrada", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
             Boolean verificarClave = BCrypt.Net.BCrypt.EnhancedVerify(sesion.Clave, usuario.Clave);
@@ -31,11 +31,11 @@ namespace AppBibilioteca.Controlador
                 MessageBox.Show("Credenciales Correctas");
                 return true;
             }
-            else 
+            else
             {
                 MessageBox.Show("Credenciales Incorrectas", "Error de entrada", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
-            }
+            }            
 
         }
     }

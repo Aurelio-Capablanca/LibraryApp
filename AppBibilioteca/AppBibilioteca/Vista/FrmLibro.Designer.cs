@@ -32,7 +32,7 @@
             this.BtnEliminar = new System.Windows.Forms.Button();
             this.BtnActualizar = new System.Windows.Forms.Button();
             this.btnMostrar = new System.Windows.Forms.Button();
-            this.dgvUsuarios = new System.Windows.Forms.DataGridView();
+            this.dgvLibros = new System.Windows.Forms.DataGridView();
             this.BtnCrear = new System.Windows.Forms.Button();
             this.OfdCargarImagen = new System.Windows.Forms.OpenFileDialog();
             this.label1 = new System.Windows.Forms.Label();
@@ -45,7 +45,7 @@
             this.pbFoto = new System.Windows.Forms.PictureBox();
             this.btnExaminarFoto = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLibros)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudCantidad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).BeginInit();
             this.SuspendLayout();
@@ -65,6 +65,7 @@
             this.BtnEliminar.TabIndex = 40;
             this.BtnEliminar.Text = "Eliminar";
             this.BtnEliminar.UseVisualStyleBackColor = true;
+            this.BtnEliminar.Click += new System.EventHandler(this.BtnEliminar_Click);
             // 
             // BtnActualizar
             // 
@@ -74,6 +75,7 @@
             this.BtnActualizar.TabIndex = 39;
             this.BtnActualizar.Text = "Actualizar";
             this.BtnActualizar.UseVisualStyleBackColor = true;
+            this.BtnActualizar.Click += new System.EventHandler(this.BtnActualizar_Click);
             // 
             // btnMostrar
             // 
@@ -84,13 +86,14 @@
             this.btnMostrar.Text = "Mostrar";
             this.btnMostrar.UseVisualStyleBackColor = true;
             // 
-            // dgvUsuarios
+            // dgvLibros
             // 
-            this.dgvUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvUsuarios.Location = new System.Drawing.Point(37, 278);
-            this.dgvUsuarios.Name = "dgvUsuarios";
-            this.dgvUsuarios.Size = new System.Drawing.Size(558, 151);
-            this.dgvUsuarios.TabIndex = 37;
+            this.dgvLibros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvLibros.Location = new System.Drawing.Point(37, 278);
+            this.dgvLibros.Name = "dgvLibros";
+            this.dgvLibros.Size = new System.Drawing.Size(558, 151);
+            this.dgvLibros.TabIndex = 37;
+            this.dgvLibros.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLibros_CellContentClick);
             // 
             // BtnCrear
             // 
@@ -227,12 +230,12 @@
             this.Controls.Add(this.BtnEliminar);
             this.Controls.Add(this.BtnActualizar);
             this.Controls.Add(this.btnMostrar);
-            this.Controls.Add(this.dgvUsuarios);
+            this.Controls.Add(this.dgvLibros);
             this.Controls.Add(this.BtnCrear);
             this.Controls.Add(this.txtID);
             this.Name = "FrmLibro";
             this.Text = "FrmLibro";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLibros)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudCantidad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).EndInit();
             this.ResumeLayout(false);
@@ -246,7 +249,7 @@
         private System.Windows.Forms.Button BtnEliminar;
         private System.Windows.Forms.Button BtnActualizar;
         private System.Windows.Forms.Button btnMostrar;
-        private System.Windows.Forms.DataGridView dgvUsuarios;
+        private System.Windows.Forms.DataGridView dgvLibros;
         private System.Windows.Forms.Button BtnCrear;
         private System.Windows.Forms.OpenFileDialog OfdCargarImagen;
         private System.Windows.Forms.Label label1;

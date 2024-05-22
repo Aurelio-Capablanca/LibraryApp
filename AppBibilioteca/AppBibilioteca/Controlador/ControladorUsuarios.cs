@@ -20,7 +20,7 @@ namespace AppBibilioteca.Controlador
 
         public const string consultarTipo = "SELECT * FROM TipoUsuarios tu";
 
-        public const string consultarRol = "SELECT * FROM Roles r";
+        public const string consultarRol = "SELECT * FROM Roles r Where r.idRol < 4";
 
         public const string consultarTodosLosUsuarios = "select us.idUsuarios, us.nombreUsuario, us.apellidoUsuario, us.correoUsuario, CASE when us.bloqueado = 0 then 'No' When us.bloqueado = 1 then 'Si' else 'Indeterminado' end as bloqueo from Usuarios us Inner join TipoUsuarios tu on idTipoUsuarios = us.idTipoUsuario  inner join Roles r  on r.idRol = us.idRol";
 
@@ -35,18 +35,22 @@ namespace AppBibilioteca.Controlador
                     usuario.estado.Clear();
                     return 0;
                 }
-            }            
-            return usuario.Id.Equals(0) ? 
+            }
+            return usuario.Id.Equals(0) ?
                 EjecutarAccion
                 (
                 new ArrayList { usuario.Nombre, usuario.Apellido, usuario.Correo, usuario.Clave, false, usuario.TipoUsuario, usuario.Rol },
-                "insert into Usuarios (nombreUsuario,apellidoUsuario,correoUsuario,claveUsuario,bloqueado,idTipoUsuario,idRol) values (@param1, @param2, @param3, @param4, @param5, @param6, @param7)"
+                "insert into Usuarios (nombreUsuario,apellidoUsuario,correoUsuario,claveUsuario,bloqueado,idTipoUsuario,idRol) values (@param1, @param2, @param3, @param4, @param5, @param6, @param7)",
+                "Usuario",
+                accion
                 )
-                : 
+                :
                 EjecutarAccion
                 (
-                    new ArrayList {usuario.Nombre, usuario.Apellido, usuario.Correo, usuario.TipoUsuario, usuario.Rol, usuario.Id},
-                    "update Usuarios set nombreUsuario = @param1, apellidoUsuario = @param2, correoUsuario = @param3, idTipoUsuario = @param4, idRol = @param5 where idUsuarios = @param6"
+                    new ArrayList { usuario.Nombre, usuario.Apellido, usuario.Correo, usuario.TipoUsuario, usuario.Rol, usuario.Id },
+                    "update Usuarios set nombreUsuario = @param1, apellidoUsuario = @param2, correoUsuario = @param3, idTipoUsuario = @param4, idRol = @param5 where idUsuarios = @param6",
+                    "Usuario",
+                    accion
                 );
         }
 
@@ -77,6 +81,17 @@ namespace AppBibilioteca.Controlador
             }
         }
 
+
+        public void EliminarUsuario(int idUsuario) 
+        {            
+            EjecutarAccion
+               (
+               new ArrayList { idUsuario },
+               "Delete From Usuarios Where idUsuarios = @param1",
+               "Usuario",
+               "Borrar"
+               );
+        }
 
 
 

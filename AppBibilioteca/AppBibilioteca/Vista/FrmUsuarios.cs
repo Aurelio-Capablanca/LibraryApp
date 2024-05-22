@@ -26,7 +26,7 @@ namespace AppBibilioteca.Vista
             usuario.Apellido = TxtApellido.Text;
             usuario.Correo = TxtCorreo.Text;
             usuario.TipoUsuario = Convert.ToInt16(CmbTipoUsuario.SelectedValue);
-            usuario.Rol = Convert.ToInt16(CmbRol.SelectedValue);
+            usuario.Rol = usuario.TipoUsuario.Equals(2) ? 4 : Convert.ToInt16(CmbRol.SelectedValue);
             if (TxtClave.Text.Equals(TxtConfirmar.Text))
             {
                 usuario.Clave = BCrypt.Net.BCrypt.EnhancedHashPassword(TxtClave.Text, 13);
@@ -95,6 +95,11 @@ namespace AppBibilioteca.Vista
         private void BtnActualizar_Click(object sender, EventArgs e)
         {
             ActualizarUsuario();
+        }
+
+        private void BtnEliminar_Click(object sender, EventArgs e)
+        {
+            control.EliminarUsuario(Convert.ToInt32(txtID.Text));
         }
     }
 }
