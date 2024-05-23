@@ -19,5 +19,6 @@ namespace AppBibilioteca.Ayudante
         public static void DefinirUsuario(Usuario usuario) {
             usuarioSesion = usuario;
         }
+
     }
 }

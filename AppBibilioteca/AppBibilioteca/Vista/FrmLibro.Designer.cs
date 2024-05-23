@@ -45,6 +45,7 @@
             this.pbFoto = new System.Windows.Forms.PictureBox();
             this.btnExaminarFoto = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.BtnLimpiar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLibros)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudCantidad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).BeginInit();
@@ -212,11 +213,22 @@
             this.label4.TabIndex = 110;
             this.label4.Text = "Libros";
             // 
+            // BtnLimpiar
+            // 
+            this.BtnLimpiar.Location = new System.Drawing.Point(508, 210);
+            this.BtnLimpiar.Name = "BtnLimpiar";
+            this.BtnLimpiar.Size = new System.Drawing.Size(75, 23);
+            this.BtnLimpiar.TabIndex = 111;
+            this.BtnLimpiar.Text = "Limpiar";
+            this.BtnLimpiar.UseVisualStyleBackColor = true;
+            this.BtnLimpiar.Click += new System.EventHandler(this.BtnLimpiar_Click);
+            // 
             // FrmLibro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(626, 450);
+            this.Controls.Add(this.BtnLimpiar);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnExaminarFoto);
             this.Controls.Add(this.label12);
@@ -262,5 +274,6 @@
         private System.Windows.Forms.PictureBox pbFoto;
         private System.Windows.Forms.Button btnExaminarFoto;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button BtnLimpiar;
     }
 }

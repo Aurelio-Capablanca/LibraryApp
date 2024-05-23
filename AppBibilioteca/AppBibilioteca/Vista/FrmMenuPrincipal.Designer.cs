@@ -34,6 +34,7 @@
             this.BtnUsuarios = new System.Windows.Forms.Button();
             this.BtnLibros = new System.Windows.Forms.Button();
             this.BtnCatalogo = new System.Windows.Forms.Button();
+            this.BtnCerrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -94,11 +95,22 @@
             this.BtnCatalogo.UseVisualStyleBackColor = true;
             this.BtnCatalogo.Click += new System.EventHandler(this.BtnCatalogo_Click);
             // 
+            // BtnCerrar
+            // 
+            this.BtnCerrar.Location = new System.Drawing.Point(44, 403);
+            this.BtnCerrar.Name = "BtnCerrar";
+            this.BtnCerrar.Size = new System.Drawing.Size(102, 23);
+            this.BtnCerrar.TabIndex = 7;
+            this.BtnCerrar.Text = "Cerrar Sesion";
+            this.BtnCerrar.UseVisualStyleBackColor = true;
+            this.BtnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
+            // 
             // FrmMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.BtnCerrar);
             this.Controls.Add(this.BtnCatalogo);
             this.Controls.Add(this.BtnLibros);
             this.Controls.Add(this.BtnUsuarios);
@@ -122,5 +134,6 @@
         private System.Windows.Forms.Button BtnUsuarios;
         private System.Windows.Forms.Button BtnLibros;
         private System.Windows.Forms.Button BtnCatalogo;
+        private System.Windows.Forms.Button BtnCerrar;
     }
 }

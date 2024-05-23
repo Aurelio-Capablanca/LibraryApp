@@ -37,9 +37,18 @@ namespace AppBibilioteca.Vista
             dgvLibros.DataSource = control.RealizarConsultaTotal(ControladorLibros.consultarTodosLosLibros);
         }
 
+        private void Limpiar() 
+        {
+            pbFoto.Image = null;
+            txtNombre.Clear();
+            txtISBN.Clear();
+            nudCantidad.Value = 1;
+        }
+
         public FrmLibro()
         {
             InitializeComponent();
+            txtID.Visible = false;
             MostrarLibros();
         }
 
@@ -65,6 +74,8 @@ namespace AppBibilioteca.Vista
         private void BtnCrear_Click(object sender, EventArgs e)
         {
             CrearLibro();
+            MostrarLibros();
+            Limpiar();
         }
 
         private void dgvLibros_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -94,12 +105,21 @@ namespace AppBibilioteca.Vista
 
         private void BtnActualizar_Click(object sender, EventArgs e)
         {
-            ActualizarLibro();
+            ActualizarLibro();            
+            MostrarLibros();
+            Limpiar();
         }
 
         private void BtnEliminar_Click(object sender, EventArgs e)
         {
             control.BorrarLibro(Convert.ToInt32(txtID.Text));
+            MostrarLibros();
+            Limpiar();
+        }
+
+        private void BtnLimpiar_Click(object sender, EventArgs e)
+        {
+            Limpiar();
         }
     }
 }

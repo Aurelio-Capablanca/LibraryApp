@@ -36,7 +36,11 @@ namespace AppBibilioteca.Controlador
                 MessageBox.Show("Credenciales Incorrectas", "Error de entrada", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }            
+        }
 
+        public void CerrarSesion() 
+        {
+            AccesoGlobal.DefinirUsuario(null);
         }
     }
 }

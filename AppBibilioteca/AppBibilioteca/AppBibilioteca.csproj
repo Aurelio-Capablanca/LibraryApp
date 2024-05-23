@@ -84,6 +84,7 @@
     <Compile Include="Modelo\Libros.cs" />
     <Compile Include="Modelo\PrestamoLibro.cs" />
     <Compile Include="Modelo\Salidas\CatalogoLibros.cs" />
+    <Compile Include="Modelo\Salidas\RetornarLibros.cs" />
     <Compile Include="Modelo\Salidas\UsuarioRetorno.cs" />
     <Compile Include="Modelo\Usuario.cs" />
     <Compile Include="Program.cs" />
@@ -106,6 +107,12 @@
     </Compile>
     <Compile Include="Vista\FrmLibro.Designer.cs">
       <DependentUpon>FrmLibro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\FrmLibrosPendientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\FrmLibrosPendientes.Designer.cs">
+      <DependentUpon>FrmLibrosPendientes.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\FrmLogin.cs">
       <SubType>Form</SubType>
@@ -130,6 +137,12 @@
     </Compile>
     <Compile Include="Vista\FrmPrimerUsuario.Designer.cs">
       <DependentUpon>FrmPrimerUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\FrmRetornoLibros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\FrmRetornoLibros.Designer.cs">
+      <DependentUpon>FrmRetornoLibros.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\FrmUsuarios.cs">
       <SubType>Form</SubType>
@@ -164,6 +177,9 @@
     <EmbeddedResource Include="Vista\FrmLibro.resx">
       <DependentUpon>FrmLibro.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vista\FrmLibrosPendientes.resx">
+      <DependentUpon>FrmLibrosPendientes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -175,6 +191,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\FrmPrimerUsuario.resx">
       <DependentUpon>FrmPrimerUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\FrmRetornoLibros.resx">
+      <DependentUpon>FrmRetornoLibros.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\FrmUsuarios.resx">
       <DependentUpon>FrmUsuarios.cs</DependentUpon>

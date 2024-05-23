@@ -33,6 +33,7 @@
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BtnRegresar = new System.Windows.Forms.Button();
+            this.BtnCerrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -81,12 +82,24 @@
             this.BtnRegresar.TabIndex = 11;
             this.BtnRegresar.Text = "Regresar Libros";
             this.BtnRegresar.UseVisualStyleBackColor = true;
+            this.BtnRegresar.Click += new System.EventHandler(this.BtnRegresar_Click);
+            // 
+            // BtnCerrar
+            // 
+            this.BtnCerrar.Location = new System.Drawing.Point(24, 394);
+            this.BtnCerrar.Name = "BtnCerrar";
+            this.BtnCerrar.Size = new System.Drawing.Size(138, 25);
+            this.BtnCerrar.TabIndex = 12;
+            this.BtnCerrar.Text = "Cerrar Sesion";
+            this.BtnCerrar.UseVisualStyleBackColor = true;
+            this.BtnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
             // 
             // FrmPanelExternos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1137, 492);
+            this.Controls.Add(this.BtnCerrar);
             this.Controls.Add(this.BtnRegresar);
             this.Controls.Add(this.BtnCatalogo);
             this.Controls.Add(this.lblLogo);
@@ -107,5 +120,6 @@
         private System.Windows.Forms.Panel panelContenedor;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button BtnRegresar;
+        private System.Windows.Forms.Button BtnCerrar;
     }
 }

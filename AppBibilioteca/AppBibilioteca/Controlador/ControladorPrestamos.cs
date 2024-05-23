@@ -1,5 +1,6 @@
 ﻿using AppBibilioteca.Ayudante;
 using AppBibilioteca.Modelo;
+using AppBibilioteca.Modelo.Salidas;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -28,6 +29,24 @@ namespace AppBibilioteca.Controlador
                 "Update Libros set cantidadLibros = cantidadLibros - @param1 Where idLibro = @param2",
                 "Prestamo Libro",
                 "Descargo"
+                );
+        }
+
+        public void RegresarLibro(RetornarLibros regresar) 
+        {
+            EjecutarAccion
+                (
+                new ArrayList { regresar.IdPrestamo },
+                "Update PrestamoLibros set devolucion = 1 Where idPrestamo = @param1",
+                "Regresar Libro",
+                "Regresar"
+                );
+            EjecutarAccion
+                (
+                new ArrayList { regresar.CantidadLibros, regresar.IdLibro },
+                "Update Libros set cantidadLibros = cantidadLibros + @param1 Where idLibro = @param2",
+                "Regresar Libro",
+                "Cargo"
                 );
         }
 

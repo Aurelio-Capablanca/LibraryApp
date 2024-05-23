@@ -49,6 +49,7 @@
             this.BtnEliminar = new System.Windows.Forms.Button();
             this.lblRol = new System.Windows.Forms.Label();
             this.lblTipoUsuario = new System.Windows.Forms.Label();
+            this.BtnLimpiar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).BeginInit();
             this.SuspendLayout();
             // 
@@ -143,7 +144,7 @@
             // 
             // BtnCrear
             // 
-            this.BtnCrear.Location = new System.Drawing.Point(495, 54);
+            this.BtnCrear.Location = new System.Drawing.Point(495, 27);
             this.BtnCrear.Name = "BtnCrear";
             this.BtnCrear.Size = new System.Drawing.Size(75, 23);
             this.BtnCrear.TabIndex = 16;
@@ -178,7 +179,7 @@
             // 
             // btnMostrar
             // 
-            this.btnMostrar.Location = new System.Drawing.Point(495, 143);
+            this.btnMostrar.Location = new System.Drawing.Point(495, 116);
             this.btnMostrar.Name = "btnMostrar";
             this.btnMostrar.Size = new System.Drawing.Size(75, 23);
             this.btnMostrar.TabIndex = 29;
@@ -195,7 +196,7 @@
             // 
             // BtnActualizar
             // 
-            this.BtnActualizar.Location = new System.Drawing.Point(495, 100);
+            this.BtnActualizar.Location = new System.Drawing.Point(495, 73);
             this.BtnActualizar.Name = "BtnActualizar";
             this.BtnActualizar.Size = new System.Drawing.Size(75, 23);
             this.BtnActualizar.TabIndex = 31;
@@ -205,7 +206,7 @@
             // 
             // BtnEliminar
             // 
-            this.BtnEliminar.Location = new System.Drawing.Point(495, 184);
+            this.BtnEliminar.Location = new System.Drawing.Point(495, 157);
             this.BtnEliminar.Name = "BtnEliminar";
             this.BtnEliminar.Size = new System.Drawing.Size(75, 23);
             this.BtnEliminar.TabIndex = 32;
@@ -231,11 +232,22 @@
             this.lblTipoUsuario.TabIndex = 34;
             this.lblTipoUsuario.Text = "Tipo Usuario";
             // 
+            // BtnLimpiar
+            // 
+            this.BtnLimpiar.Location = new System.Drawing.Point(495, 199);
+            this.BtnLimpiar.Name = "BtnLimpiar";
+            this.BtnLimpiar.Size = new System.Drawing.Size(75, 23);
+            this.BtnLimpiar.TabIndex = 35;
+            this.BtnLimpiar.Text = "Limpiar";
+            this.BtnLimpiar.UseVisualStyleBackColor = true;
+            this.BtnLimpiar.Click += new System.EventHandler(this.BtnLimpiar_Click);
+            // 
             // FrmUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(610, 450);
+            this.Controls.Add(this.BtnLimpiar);
             this.Controls.Add(this.lblTipoUsuario);
             this.Controls.Add(this.lblRol);
             this.Controls.Add(this.BtnEliminar);
@@ -288,5 +300,6 @@
         private System.Windows.Forms.Button BtnEliminar;
         private System.Windows.Forms.Label lblRol;
         private System.Windows.Forms.Label lblTipoUsuario;
+        private System.Windows.Forms.Button BtnLimpiar;
     }
 }

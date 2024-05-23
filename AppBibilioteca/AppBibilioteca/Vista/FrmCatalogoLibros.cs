@@ -21,6 +21,7 @@ namespace AppBibilioteca.Vista
         public FrmCatalogoLibros()
         {
             InitializeComponent();
+            txtidLibro.Visible = false;
             flpLibros.AutoScroll = true;
         }
 
@@ -73,7 +74,7 @@ namespace AppBibilioteca.Vista
                 {
                     using (MemoryStream stream = new MemoryStream(listaLibros[i].Foto))
                     {
-                        MessageBox.Show(listaLibros[i].Foto.Length + " Iteration " + listaLibros[indice].ID);
+                        //MessageBox.Show(listaLibros[i].Foto.Length + " Iteration " + listaLibros[indice].ID);
                         Image image = Image.FromStream(stream);
                         imagen.Image = image;
 
@@ -84,15 +85,6 @@ namespace AppBibilioteca.Vista
                 panelTarjeta.Controls.Add(boton);
                 flpLibros.Controls.Add(panelTarjeta);
             }
-        }
-
-        private void ResetPanel(Panel panel)
-        {
-            panel.Controls.Clear();
-            panel.BorderStyle = BorderStyle.None;
-            panel.BackColor = SystemColors.Control;
-            panel.Size = new Size(200, 100);
-            panel.Location = new Point(0, 0);
         }
 
         private void InicializarLibros()
@@ -116,19 +108,24 @@ namespace AppBibilioteca.Vista
                 flpLibros.Controls.Clear();
                 GenerarCartas(listaLibros);
             }
-            else 
+            else
             {
                 List<CatalogoLibros> listaLibros = control.BuscarLibros(TxtBuscar.Text);
                 flpLibros.Controls.Clear();
                 GenerarCartas(listaLibros);
-            }            
+            }
         }
 
         private void BtnAcciones_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show(AccesoGlobal.ObtenerUsuarios().ConvertirEnCadena());
+        {            
+            //if (!txtidLibro.Text.Equals("")) 
+            //{
+            //    MessageBox.Show("No Ha seleccionado ningún libro para prestar");
+            //    return;
+            //}
             ControladorPrestamos controlPrestamos = new ControladorPrestamos();
             controlPrestamos.RealizarPrestamo(new PrestamoLibro { IdLibro = Convert.ToInt32(txtidLibro.Text), IdUsuario = AccesoGlobal.ObtenerUsuarios().Id, Cantidad = Convert.ToInt32(nudNumeroLibros.Value), FechaPrestamo = lblInicioPrestamo.Text, FechaDevolucion = lblFinPrestamo.Text });
+            InicializarLibros();
         }
     }
 }

@@ -26,6 +26,12 @@ namespace AppBibilioteca.Controlador
 
         public const string consultarBusqueda = "select idLibro ,nombreLibro, cantidadLibros, foto from Libros lbr  Where CONTAINS(nombreLibro, @param1) order by idLibro DESC";
 
+        public const string consultarLibrosPrestadosUsuario = "Select pl.idPrestamo, ls.idLibro, ls.nombreLibro, pl.cantidadLibros, ls.foto from PrestamoLibros pl Inner join Libros ls on ls.idLibro = pl.idLibro  Where idUsuario = @param1 and devolucion = 0";
+
+        public const string consultarLibrosPrestadosTodos = "Select nombreLibro, ISBN, ls.cantidadLibros, CONCAT(us.nombreUsuario,' ',us.apellidoUsuario) as NombreCompletoUsuario from PrestamoLibros pl Inner join Libros ls on ls.idLibro = pl.idLibro Inner join Usuarios us on us.idUsuarios = pl.idUsuario Where devolucion = 0";
+
+        public const string consultarLibrosVencidosTodos = "Select nombreLibro, ISBN, ls.cantidadLibros, CONCAT(us.nombreUsuario,' ',us.apellidoUsuario) as NombreCompletoUsuario from PrestamoLibros pl Inner join Libros ls on ls.idLibro = pl.idLibro  Inner join Usuarios us on us.idUsuarios = pl.idUsuario  Where devolucion = 0 And CAST(fechaDevolucion AS DATE) > CAST(GETDATE() AS DATE)";
+
         public List<CatalogoLibros> ConvertirLibros(string consulta)
         {
             List<CatalogoLibros> lista = new List<CatalogoLibros>();
@@ -105,7 +111,6 @@ namespace AppBibilioteca.Controlador
                     "Insert into Libros (nombreLibro, ISBN, cantidadLibros, foto) values (@param1, @param2, @param3, @param4)",
                     "Libro",
                     accion
-
                 )
                 :
                 EjecutarAccion
@@ -188,6 +193,42 @@ namespace AppBibilioteca.Controlador
                 MessageBox.Show("Error en la obtencion de datos, consulte con su administrador : " + ex.Message,
                 "Error Critico de conexión", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return new List<CatalogoLibros>();
+            }
+            finally
+            {
+                Conexion.Conexionsql().Close();
+            }
+        }
+
+        public List<RetornarLibros> ConvertirLibrosPrestados(int id)
+        {
+            List<RetornarLibros> lista = new List<RetornarLibros>();
+            try
+            {
+                SqlCommand ejecutar = new SqlCommand(consultarLibrosPrestadosUsuario, Conexion.Conexionsql());
+                ejecutar.Parameters.Add(new SqlParameter("param1",id));
+                SqlDataReader leer = ejecutar.ExecuteReader();
+                while (leer.Read())
+                {
+                    int idPrestamo = leer.GetInt32(0);
+                    int idLibro = leer.GetInt32(1);
+                    string nombreLibro = leer.GetString(2);
+                    int cantidadLibros = leer.GetInt32(3);
+                    byte[] foto = new byte[1] { 0 };
+                    if (!leer.IsDBNull(4))
+                    {
+                        foto = (byte[])leer[4];
+                    }
+
+                    lista.Add(new RetornarLibros(idPrestamo, idLibro, nombreLibro, cantidadLibros, foto));
+                }
+                return lista;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error en la obtencion de datos, consulte con su administrador : " + ex,
+                "Error Critico de conexión", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return new List<RetornarLibros>();
             }
             finally
             {

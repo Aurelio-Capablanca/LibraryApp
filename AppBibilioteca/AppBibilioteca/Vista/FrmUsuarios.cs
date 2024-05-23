@@ -50,6 +50,16 @@ namespace AppBibilioteca.Vista
             control.GuardarUsuario(usuario);
         }
 
+        private void Limpiar()
+        {
+            txtID.Clear();
+            TxtNombre.Clear();
+            TxtApellido.Clear();
+            TxtCorreo.Clear();
+            CmbRol.SelectedValue = 1;
+            CmbTipoUsuario.SelectedValue = 1;
+        }
+
         private void MostrarUsuarios()
         {
             dgvUsuarios.DataSource = control.RealizarConsultaTotal(ControladorUsuarios.consultarTodosLosUsuarios);
@@ -58,6 +68,7 @@ namespace AppBibilioteca.Vista
         public FrmUsuarios()
         {
             InitializeComponent();
+            txtID.Visible = false;
             MostrarUsuarios();
             CmbTipoUsuario.DataSource = control.RealizarConsultaTotal(ControladorUsuarios.consultarTipo);
             CmbTipoUsuario.DisplayMember = "TipoUsuario";
@@ -71,6 +82,8 @@ namespace AppBibilioteca.Vista
         private void BtnCrear_Click(object sender, EventArgs e)
         {
             CrearUsuario();
+            Limpiar();
+            MostrarUsuarios();
         }
 
         private void btnMostrar_Click(object sender, EventArgs e)
@@ -95,11 +108,20 @@ namespace AppBibilioteca.Vista
         private void BtnActualizar_Click(object sender, EventArgs e)
         {
             ActualizarUsuario();
+            Limpiar();
+            MostrarUsuarios();
         }
 
         private void BtnEliminar_Click(object sender, EventArgs e)
         {
             control.EliminarUsuario(Convert.ToInt32(txtID.Text));
+            Limpiar();
+            MostrarUsuarios();
+        }
+
+        private void BtnLimpiar_Click(object sender, EventArgs e)
+        {
+            Limpiar();
         }
     }
 }

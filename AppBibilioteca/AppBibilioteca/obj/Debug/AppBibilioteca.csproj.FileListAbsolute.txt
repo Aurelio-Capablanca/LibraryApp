@@ -55,3 +55,5 @@ C:\Users\adalb\Desktop\Proyecto\Personal\Universidad\Universidad 2024\Ciclo 1\Pr
 C:\Users\adalb\Desktop\Proyecto\Personal\Universidad\Universidad 2024\Ciclo 1\Programación I\LibraryApp\AppBibilioteca\AppBibilioteca\obj\Debug\AppBibilioteca.Vista.FrmLibro.resources
 C:\Users\adalb\Desktop\Proyecto\Personal\Universidad\Universidad 2024\Ciclo 1\Programación I\LibraryApp\AppBibilioteca\AppBibilioteca\obj\Debug\AppBibilioteca.Vista.FrmExternos.resources
 C:\Users\adalb\Desktop\Proyecto\Personal\Universidad\Universidad 2024\Ciclo 1\Programación I\LibraryApp\AppBibilioteca\AppBibilioteca\obj\Debug\AppBibilioteca.Vista.FrmPanelExternos.resources
+C:\Users\adalb\Desktop\Proyecto\Personal\Universidad\Universidad 2024\Ciclo 1\Programación I\LibraryApp\AppBibilioteca\AppBibilioteca\obj\Debug\AppBibilioteca.Vista.FrmRetornoLibros.resources
+C:\Users\adalb\Desktop\Proyecto\Personal\Universidad\Universidad 2024\Ciclo 1\Programación I\LibraryApp\AppBibilioteca\AppBibilioteca\obj\Debug\AppBibilioteca.Vista.FrmLibrosPendientes.resources
