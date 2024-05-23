@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AppBibilioteca.Controlador;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -65,6 +66,15 @@ namespace AppBibilioteca.Vista
         private void BtnLibros_Click(object sender, EventArgs e)
         {
             AbrirFormulario<FrmLibro>();
+        }
+
+        private void BtnCerrar_Click(object sender, EventArgs e)
+        {
+            SesionControlador sesion = new SesionControlador();
+            sesion.CerrarSesion();
+            FrmLogin login = new FrmLogin();
+            this.Hide();
+            login.Show();
         }
     }
 }

@@ -20,7 +20,7 @@ namespace AppBibilioteca.Controlador
 
         public const string consultarTipo = "SELECT * FROM TipoUsuarios tu";
 
-        public const string consultarRol = "SELECT * FROM Roles r Where r.idRol < 4";
+        public const string consultarRol = "SELECT * FROM Roles r";
 
         public const string consultarTodosLosUsuarios = "select us.idUsuarios, us.nombreUsuario, us.apellidoUsuario, us.correoUsuario, CASE when us.bloqueado = 0 then 'No' When us.bloqueado = 1 then 'Si' else 'Indeterminado' end as bloqueo from Usuarios us Inner join TipoUsuarios tu on idTipoUsuarios = us.idTipoUsuario  inner join Roles r  on r.idRol = us.idRol";
 

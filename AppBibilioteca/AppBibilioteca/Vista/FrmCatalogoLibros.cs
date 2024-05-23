@@ -86,15 +86,6 @@ namespace AppBibilioteca.Vista
             }
         }
 
-        private void ResetPanel(Panel panel)
-        {
-            panel.Controls.Clear();
-            panel.BorderStyle = BorderStyle.None;
-            panel.BackColor = SystemColors.Control;
-            panel.Size = new Size(200, 100);
-            panel.Location = new Point(0, 0);
-        }
-
         private void InicializarLibros()
         {
             List<CatalogoLibros> listaLibros = control.ConvertirLibros(ControladorLibros.consultarLibrosIncial);
@@ -116,12 +107,12 @@ namespace AppBibilioteca.Vista
                 flpLibros.Controls.Clear();
                 GenerarCartas(listaLibros);
             }
-            else 
+            else
             {
                 List<CatalogoLibros> listaLibros = control.BuscarLibros(TxtBuscar.Text);
                 flpLibros.Controls.Clear();
                 GenerarCartas(listaLibros);
-            }            
+            }
         }
 
         private void BtnAcciones_Click(object sender, EventArgs e)
