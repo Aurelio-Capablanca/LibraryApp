@@ -119,7 +119,7 @@
             this.BtnAcciones.Name = "BtnAcciones";
             this.BtnAcciones.Size = new System.Drawing.Size(173, 58);
             this.BtnAcciones.TabIndex = 1;
-            this.BtnAcciones.Text = "Texto";
+            this.BtnAcciones.Text = "Prestar";
             this.BtnAcciones.UseVisualStyleBackColor = true;
             this.BtnAcciones.Click += new System.EventHandler(this.BtnAcciones_Click);
             // 

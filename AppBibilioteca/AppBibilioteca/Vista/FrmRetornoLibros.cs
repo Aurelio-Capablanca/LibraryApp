@@ -61,14 +61,18 @@ namespace AppBibilioteca.Vista
                 {
                     using (MemoryStream stream = new MemoryStream(libro.Foto))
                     {
-                        //MessageBox.Show(libro.Foto.Length + " Iteration " + libro.IdLibro);
                         Image image = Image.FromStream(stream);
                         imagen.Image = image;
 
                     }
                 }
                 panelTarjeta.Controls.Add(imagen);
-                boton.Click += (s, evt) => controlPrestamo.RegresarLibro(indice);
+                boton.Click += (s, evt) => 
+                {
+                    controlPrestamo.RegresarLibro(indice);
+                    flpLibros.Controls.Clear();
+                    GenerarCartas(control.ConvertirLibrosPrestados(AccesoGlobal.ObtenerUsuarios().Id));
+                };
                 panelTarjeta.Controls.Add(boton);
                 flpLibros.Controls.Add(panelTarjeta);
             }
